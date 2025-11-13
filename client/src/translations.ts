@@ -93,7 +93,7 @@ export const translations = {
     
     // Footer
     footerCopyright: "Solinvest © 2025. All rights reserved.",
-    footerKVK: "KVK Number",
+    footerKVK: "KVK Number: 75308045",
     footerInsurance: "Liability Insurance: €2,500,000",
   },
   
@@ -191,7 +191,7 @@ export const translations = {
     
     // Footer
     footerCopyright: "Solinvest © 2025. Alle rechten voorbehouden.",
-    footerKVK: "KVK Nummer",
+    footerKVK: "KVK Nummer: 75308045",
     footerInsurance: "Aansprakelijkheidsverzekering: €2.500.000",
   }
 };

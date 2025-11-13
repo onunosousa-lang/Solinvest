@@ -67,4 +67,12 @@
 - [x] Aumentar tamanho do logo no Hero para 2x maior (256px/320px)
 - [x] Tornar a barra de navegação transparente (remover fundo azul)
 - [x] Testar a landing page v5
-- [ ] Criar checkpoint final v5
+- [x] Criar checkpoint final v5
+
+## Novas Funcionalidades Solicitadas (v6)
+
+- [x] Mover secção de contacto para o final da página (depois da secção Team)
+- [x] Remover completamente o backdrop-blur da navegação (apenas botões de idioma, sem fundo)
+- [x] Extrair KVK nummer do CV de Nuno (75308045) e substituir placeholder no rodapé
+- [x] Testar a landing page v6
+- [ ] Criar checkpoint final v6

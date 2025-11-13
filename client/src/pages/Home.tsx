@@ -52,8 +52,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Simplified Navigation Header - Transparent */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
+      {/* Simplified Navigation Header - Completely Invisible */}
+      <nav className="fixed top-0 left-0 right-0 z-50">
         <div className="container flex items-center justify-end py-4">
           <div className="flex gap-2 bg-black/30 rounded-lg p-1">
             <button
@@ -317,6 +317,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team Section - Moved to End with Reduced Photo Sizes */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ocean-view-4.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            {t.teamTitle}
+          </h2>
+          <p className="text-center text-xl text-muted-foreground mb-12">
+            {t.teamSubtitle}
+          </p>
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            {/* Nuno Sousa - Reduced Photo Size */}
+            <Card className="border-2 hover:border-accent transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center mb-6">
+                  <img 
+                    src="/nuno-photo.png" 
+                    alt="Nuno Sousa" 
+                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-accent shadow-lg"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      <Leaf className="w-6 h-6 text-accent" />
+                      {t.nunoName}
+                    </h3>
+                    <p className="text-secondary font-semibold">{t.nunoRole}</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed text-center">
+                  {t.nunoDesc}
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Christiaan Ticheler - Reduced Photo Size */}
+            <Card className="border-2 hover:border-secondary transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center mb-6">
+                  <img 
+                    src="/christiaan-photo.jpg" 
+                    alt="Christiaan Ticheler" 
+                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-secondary shadow-lg"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      <TrendingUp className="w-6 h-6 text-secondary" />
+                      {t.christianName}
+                    </h3>
+                    <p className="text-secondary font-semibold">{t.christianRole}</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground leading-relaxed text-sm text-center">
+                  {t.christianDesc}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-12">
+            <WhatsAppCTA />
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section with Ocean Background */}
       <section 
         id="contact" 
@@ -432,76 +502,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team Section - Moved to End with Reduced Photo Sizes */}
-      <section 
-        className="py-20 relative overflow-hidden"
-        style={{
-          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ocean-view-4.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <div className="container relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-            {t.teamTitle}
-          </h2>
-          <p className="text-center text-xl text-muted-foreground mb-12">
-            {t.teamSubtitle}
-          </p>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Nuno Sousa - Reduced Photo Size */}
-            <Card className="border-2 hover:border-accent transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="flex flex-col items-center mb-6">
-                  <img 
-                    src="/nuno-photo.png" 
-                    alt="Nuno Sousa" 
-                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-accent shadow-lg"
-                  />
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                      <Leaf className="w-6 h-6 text-accent" />
-                      {t.nunoName}
-                    </h3>
-                    <p className="text-secondary font-semibold">{t.nunoRole}</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed text-center">
-                  {t.nunoDesc}
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Christiaan Ticheler - Reduced Photo Size */}
-            <Card className="border-2 hover:border-secondary transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <div className="flex flex-col items-center mb-6">
-                  <img 
-                    src="/christiaan-photo.jpg" 
-                    alt="Christiaan Ticheler" 
-                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-secondary shadow-lg"
-                  />
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
-                      <TrendingUp className="w-6 h-6 text-secondary" />
-                      {t.christianName}
-                    </h3>
-                    <p className="text-secondary font-semibold">{t.christianRole}</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed text-sm text-center">
-                  {t.christianDesc}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="text-center mt-12">
-            <WhatsAppCTA />
-          </div>
-        </div>
-      </section>
-
       {/* Footer with KVK and Insurance - Ocean Background */}
       <footer 
         className="py-12 relative overflow-hidden border-t border-primary-foreground/20"
@@ -519,7 +519,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6 text-white">
               <div className="flex items-center gap-2">
                 <Building2 className="w-5 h-5" />
-                <span className="text-sm font-medium">{t.footerKVK}: [Your KVK Number]</span>
+                <span className="text-sm font-medium">{t.footerKVK}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="w-5 h-5" />
