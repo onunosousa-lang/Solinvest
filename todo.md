@@ -34,4 +34,18 @@
 - [x] Reescrever copywriting com foco em: problem-solving, ROI, full-service (sourcing → sale)
 - [x] Enfatizar "private group of unique findings" e "great local connections"
 - [x] Testar a landing page atualizada
-- [ ] Criar checkpoint final v2
+- [x] Criar checkpoint final v2
+
+## Novas Funcionalidades Solicitadas (v3)
+
+- [x] Redimensionar e enquadrar melhor a foto de Nuno
+- [x] Extrair informações do CV de Christiaan e criar história profissional
+- [x] Mover secção "Who Are We" (Team) para o final da página
+- [x] Adicionar KVK nummer no rodapé
+- [x] Adicionar seguro de responsabilidade €2.500.000 no rodapé
+- [x] Remover logo da navegação do topo
+- [x] Colocar logo maior no Hero (acima do título/hook)
+- [x] Criar paleta de cores inspirada no mar/logo/Portugal (azul oceano, dourado sol, branco areia)
+- [x] Adicionar imagens de vistas para o mar
+- [x] Testar a landing page v3
+- [ ] Criar checkpoint final v3

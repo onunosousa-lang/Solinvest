@@ -35,7 +35,7 @@ export const translations = {
     nunoDesc: "10+ years of international experience in sustainable construction. Specialist in timber frame construction, airtight insulation systems, and solar panel installations. Nuno ensures every project is built with maximum energy efficiency and environmental respect.",
     christianName: "Christiaan Ticheler",
     christianRole: "Real Estate Strategy & Finance",
-    christianDesc: "Extensive experience in portfolio management, asset analysis, and real estate investment. Christiaan ensures every project is a solid, well-structured investment opportunity with a focus on modular construction and strategic partnerships.",
+    christianDesc: "Christiaan brings over 15 years of institutional real estate investment experience. His career spans portfolio management at major Dutch pension funds, where he managed €650 million in global real estate allocations. As interim Asset Manager at Arcona Capital, he led complete portfolio due diligence for private equity refinancing. Since 2016, he operates Ticheler Taxatie (property valuations) and co-founded GroenVast Bouw (modular construction). His analytical skills and extensive network make him the strategic financial backbone of Solinvest.",
     
     // Process Section
     processTitle: "Our Value Creation Process",
@@ -93,6 +93,8 @@ export const translations = {
     
     // Footer
     footerCopyright: "Solinvest © 2025. All rights reserved.",
+    footerKVK: "KVK Number",
+    footerInsurance: "Liability Insurance: €2,500,000",
   },
   
   nl: {
@@ -131,7 +133,7 @@ export const translations = {
     nunoDesc: "10+ jaar internationale ervaring in duurzaam bouwen. Specialist in houtskeletbouw, luchtdichte isolatiesystemen en zonnepaneelinstallaties. Nuno zorgt ervoor dat elk project wordt gebouwd met maximale energie-efficiëntie en respect voor het milieu.",
     christianName: "Christiaan Ticheler",
     christianRole: "Vastgoedstrategie & Financiën",
-    christianDesc: "Uitgebreide ervaring in portefeuillebeheer, activaanalyse en vastgoedinvesteringen. Christiaan zorgt ervoor dat elk project een solide, goed gestructureerde investeringsmogelijkheid is met focus op modulaire bouw en strategische partnerschappen.",
+    christianDesc: "Christiaan brengt meer dan 15 jaar ervaring in institutionele vastgoedbeleggingen mee. Zijn carrière omvat portefeuillebeheer bij grote Nederlandse pensioenfondsen, waar hij €650 miljoen aan wereldwijde vastgoedallocaties beheerde. Als interim Asset Manager bij Arcona Capital leidde hij volledige portfolio due diligence voor private equity herfinanciering. Sinds 2016 runt hij Ticheler Taxatie (vastgoedtaxaties) en richtte hij GroenVast Bouw mede op (modulaire bouw). Zijn analytische vaardigheden en uitgebreide netwerk maken hem de strategische financiële ruggengraat van Solinvest.",
     
     // Process Section
     processTitle: "Ons Waardecreatie Proces",
@@ -189,6 +191,8 @@ export const translations = {
     
     // Footer
     footerCopyright: "Solinvest © 2025. Alle rechten voorbehouden.",
+    footerKVK: "KVK Nummer",
+    footerInsurance: "Aansprakelijkheidsverzekering: €2.500.000",
   }
 };
 
