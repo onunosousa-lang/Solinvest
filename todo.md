@@ -148,4 +148,13 @@
 - [x] Garantir que ambos os perfis tenham formatação CSS idêntica (removido text-sm de Christiaan)
 
 - [x] Testar a landing page v10
-- [ ] Criar checkpoint final v10
+- [x] Criar checkpoint final v10
+
+## Deploy no Vercel
+
+- [x] Verificar ferramentas Vercel MCP disponíveis
+- [ ] Criar repositório GitHub "Solinvest"
+- [ ] Inicializar Git no projeto
+- [ ] Fazer commit e push para GitHub
+- [ ] Fazer deploy no Vercel via MCP
+- [ ] Configurar domínio personalizado (se necessário)
