@@ -140,4 +140,12 @@
 - [x] Atualizar traduções EN/NL/PT
 
 - [x] Testar a landing page v9
-- [ ] Criar checkpoint final v9
+- [x] Criar checkpoint final v9
+
+## Novas Funcionalidades Solicitadas (v10)
+
+- [x] Investigar e corrigir diferença de tamanho de texto entre os perfis de Nuno e Christiaan
+- [x] Garantir que ambos os perfis tenham formatação CSS idêntica (removido text-sm de Christiaan)
+
+- [x] Testar a landing page v10
+- [ ] Criar checkpoint final v10

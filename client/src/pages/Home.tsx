@@ -433,7 +433,7 @@ export default function Home() {
                     <p className="text-secondary font-semibold">{t.christianRole}</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed text-sm text-center">
+                <p className="text-muted-foreground leading-relaxed text-center">
                   {t.christianDesc}
                 </p>
               </CardContent>
