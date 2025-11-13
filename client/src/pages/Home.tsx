@@ -52,10 +52,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Simplified Navigation Header - No Logo */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/20">
+      {/* Simplified Navigation Header - Transparent */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
         <div className="container flex items-center justify-end py-4">
-          <div className="flex gap-2 bg-white/10 rounded-lg p-1">
+          <div className="flex gap-2 bg-black/30 rounded-lg p-1">
             <button
               onClick={() => setLanguage('en')}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -86,11 +86,11 @@ export default function Home() {
           }}
         />
         <div className="relative z-10 container text-center text-white px-6">
-          {/* Large Logo Above Title - Transparent Background */}
+          {/* Large Logo Above Title - 2x Bigger */}
           <img 
             src={APP_LOGO} 
             alt="Solinvest" 
-            className="h-32 md:h-40 mx-auto mb-8 drop-shadow-2xl" 
+            className="h-64 md:h-80 mx-auto mb-8 drop-shadow-2xl" 
           />
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">

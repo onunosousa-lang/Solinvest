@@ -59,4 +59,12 @@
 - [x] Reduzir tamanho das fotos de Nuno e Christiaan na secção Team
 - [x] Criar design contínuo sem páginas brancas (backgrounds oceânicos em toda a página)
 - [x] Testar a landing page v4
-- [ ] Criar checkpoint final v4
+- [x] Criar checkpoint final v4
+
+## Novas Funcionalidades Solicitadas (v5)
+
+- [x] Substituir logo por versão branca (apenas ícone, sem texto)
+- [x] Aumentar tamanho do logo no Hero para 2x maior (256px/320px)
+- [x] Tornar a barra de navegação transparente (remover fundo azul)
+- [x] Testar a landing page v5
+- [ ] Criar checkpoint final v5
