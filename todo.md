@@ -48,4 +48,15 @@
 - [x] Criar paleta de cores inspirada no mar/logo/Portugal (azul oceano, dourado sol, branco areia)
 - [x] Adicionar imagens de vistas para o mar
 - [x] Testar a landing page v3
-- [ ] Criar checkpoint final v3
+- [x] Criar checkpoint final v3
+
+## Novas Funcionalidades Solicitadas (v4)
+
+- [x] Substituir logo por versão com fundo transparente
+- [x] Adicionar novas fotos profissionais de Nuno e Christiaan
+- [x] Adicionar backgrounds de vistas para o mar com transparência em TODAS as secções
+- [x] Remover fotos de propriedades específicas das secções (Regions, etc.)
+- [x] Reduzir tamanho das fotos de Nuno e Christiaan na secção Team
+- [x] Criar design contínuo sem páginas brancas (backgrounds oceânicos em toda a página)
+- [x] Testar a landing page v4
+- [ ] Criar checkpoint final v4

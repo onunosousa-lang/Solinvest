@@ -53,13 +53,13 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Simplified Navigation Header - No Logo */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-primary-foreground/20">
         <div className="container flex items-center justify-end py-4">
-          <div className="flex gap-2 bg-muted rounded-lg p-1">
+          <div className="flex gap-2 bg-white/10 rounded-lg p-1">
             <button
               onClick={() => setLanguage('en')}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                language === 'en' ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
+                language === 'en' ? 'bg-white text-primary' : 'text-white hover:text-white/80'
               }`}
             >
               EN
@@ -67,7 +67,7 @@ export default function Home() {
             <button
               onClick={() => setLanguage('nl')}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                language === 'nl' ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground'
+                language === 'nl' ? 'bg-white text-primary' : 'text-white hover:text-white/80'
               }`}
             >
               NL
@@ -86,7 +86,7 @@ export default function Home() {
           }}
         />
         <div className="relative z-10 container text-center text-white px-6">
-          {/* Large Logo Above Title */}
+          {/* Large Logo Above Title - Transparent Background */}
           <img 
             src={APP_LOGO} 
             alt="Solinvest" 
@@ -114,6 +114,7 @@ export default function Home() {
           backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.92), rgba(0, 60, 120, 0.92)), url(/ocean-view-2.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="container relative z-10">
@@ -142,9 +143,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-background">
-        <div className="container">
+      {/* About Section with Ocean Background */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(/ocean-view-1.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               {t.aboutTitle}
@@ -155,7 +164,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               {t.aboutText}
             </p>
-            <Card className="bg-gradient-to-r from-accent/10 to-secondary/10 border-accent">
+            <Card className="bg-white/80 backdrop-blur-sm border-accent shadow-xl">
               <CardContent className="p-8">
                 <p className="text-lg font-medium text-foreground italic">
                   {t.aboutVision}
@@ -169,10 +178,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-card">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-card-foreground">
+      {/* Process Section with Ocean Background */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url(/ocean-view-3.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
             {t.processTitle}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -182,7 +199,7 @@ export default function Home() {
               { icon: Users, title: t.process3Title, desc: t.process3Desc, color: "text-accent" },
               { icon: TrendingUp, title: t.process4Title, desc: t.process4Desc, color: "text-primary" },
             ].map((step, index) => (
-              <Card key={index} className="text-center hover:shadow-xl transition-shadow border-2 hover:border-primary">
+              <Card key={index} className="text-center hover:shadow-xl transition-shadow border-2 hover:border-primary bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <step.icon className={`w-16 h-16 mx-auto mb-4 ${step.color}`} />
                   <h3 className="text-xl font-semibold mb-3 text-card-foreground">{step.title}</h3>
@@ -204,6 +221,7 @@ export default function Home() {
           backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.88), rgba(0, 60, 120, 0.88)), url(/ocean-view-4.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="container relative z-10">
@@ -230,9 +248,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Regions Section */}
-      <section className="py-20 bg-background">
-        <div className="container">
+      {/* Regions Section with Ocean Background - No Property Photos */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(/ocean-view-2.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
             {t.regionsTitle}
           </h2>
@@ -241,14 +267,14 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { title: t.region1Title, desc: t.region1Desc, image: "/region-setubal.jpeg" },
-              { title: t.region2Title, desc: t.region2Desc, image: "/ocean-view-1.jpg" },
-              { title: t.region3Title, desc: t.region3Desc, image: "/rustic-retreat.jpg" },
-              { title: t.region4Title, desc: t.region4Desc, image: "/region-algarve.jpg" },
+              { title: t.region1Title, desc: t.region1Desc, icon: MapPin },
+              { title: t.region2Title, desc: t.region2Desc, icon: Building2 },
+              { title: t.region3Title, desc: t.region3Desc, icon: TrendingUp },
+              { title: t.region4Title, desc: t.region4Desc, icon: Leaf },
             ].map((region, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow border-2 hover:border-accent">
-                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${region.image})` }} />
-                <CardContent className="p-6">
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow border-2 hover:border-accent bg-white/90 backdrop-blur-sm">
+                <CardContent className="p-8 text-center">
+                  <region.icon className="w-16 h-16 mx-auto mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-3 text-card-foreground">{region.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{region.desc}</p>
                 </CardContent>
@@ -264,9 +290,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Community Section */}
-      <section className="py-20 bg-gradient-to-br from-accent/10 via-background to-secondary/10">
-        <div className="container">
+      {/* Community Section with Ocean Background */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(96, 165, 200, 0.15), rgba(96, 165, 200, 0.15)), linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url(/ocean-view-1.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <MessageCircle className="w-20 h-20 mx-auto mb-6 text-accent" />
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
@@ -283,11 +317,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-card">
-        <div className="container">
+      {/* Contact Section with Ocean Background */}
+      <section 
+        id="contact" 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), url(/ocean-view-3.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="container relative z-10">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-card-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
               {t.contactTitle}
             </h2>
             <p className="text-center text-xl text-secondary font-semibold mb-6">
@@ -299,7 +342,7 @@ export default function Home() {
             
             {/* Contact Numbers */}
             <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <Card className="border-2 border-primary hover:shadow-lg transition-shadow">
+              <Card className="border-2 border-primary hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6 text-center">
                   <Phone className="w-8 h-8 mx-auto mb-3 text-primary" />
                   <a href="tel:+31629841297" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
@@ -308,7 +351,7 @@ export default function Home() {
                   <p className="text-sm text-muted-foreground mt-2">{t.contactPhone1Lang}</p>
                 </CardContent>
               </Card>
-              <Card className="border-2 border-secondary hover:shadow-lg transition-shadow">
+              <Card className="border-2 border-secondary hover:shadow-lg transition-shadow bg-white/90 backdrop-blur-sm">
                 <CardContent className="p-6 text-center">
                   <Phone className="w-8 h-8 mx-auto mb-3 text-secondary" />
                   <a href="tel:+31615079953" className="text-xl font-bold text-foreground hover:text-secondary transition-colors">
@@ -319,7 +362,7 @@ export default function Home() {
               </Card>
             </div>
 
-            <Card className="border-2 border-accent">
+            <Card className="border-2 border-accent bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -389,13 +432,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team Section - Moved to End */}
+      {/* Team Section - Moved to End with Reduced Photo Sizes */}
       <section 
         className="py-20 relative overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ocean-view-3.jpg)",
+          backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ocean-view-4.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="container relative z-10">
@@ -406,41 +450,47 @@ export default function Home() {
             {t.teamSubtitle}
           </p>
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Nuno Sousa */}
-            <Card className="border-2 hover:border-accent transition-colors overflow-hidden shadow-lg">
-              <div 
-                className="h-96 bg-cover bg-center" 
-                style={{ backgroundImage: "url(/nuno-sousa-cropped.png)" }} 
-              />
+            {/* Nuno Sousa - Reduced Photo Size */}
+            <Card className="border-2 hover:border-accent transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <Leaf className="w-10 h-10 text-accent mr-4" />
-                  <div>
-                    <h3 className="text-2xl font-bold text-card-foreground">{t.nunoName}</h3>
+                <div className="flex flex-col items-center mb-6">
+                  <img 
+                    src="/nuno-photo.png" 
+                    alt="Nuno Sousa" 
+                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-accent shadow-lg"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      <Leaf className="w-6 h-6 text-accent" />
+                      {t.nunoName}
+                    </h3>
                     <p className="text-secondary font-semibold">{t.nunoRole}</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-center">
                   {t.nunoDesc}
                 </p>
               </CardContent>
             </Card>
 
-            {/* Christiaan Ticheler */}
-            <Card className="border-2 hover:border-secondary transition-colors overflow-hidden shadow-lg">
-              <div 
-                className="h-96 bg-cover bg-top" 
-                style={{ backgroundImage: "url(/christiaan-ticheler.webp)" }} 
-              />
+            {/* Christiaan Ticheler - Reduced Photo Size */}
+            <Card className="border-2 hover:border-secondary transition-colors overflow-hidden shadow-lg bg-white/90 backdrop-blur-sm">
               <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <TrendingUp className="w-10 h-10 text-secondary mr-4" />
-                  <div>
-                    <h3 className="text-2xl font-bold text-card-foreground">{t.christianName}</h3>
+                <div className="flex flex-col items-center mb-6">
+                  <img 
+                    src="/christiaan-photo.jpg" 
+                    alt="Christiaan Ticheler" 
+                    className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-secondary shadow-lg"
+                  />
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground flex items-center justify-center gap-2">
+                      <TrendingUp className="w-6 h-6 text-secondary" />
+                      {t.christianName}
+                    </h3>
                     <p className="text-secondary font-semibold">{t.christianRole}</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed text-sm">
+                <p className="text-muted-foreground leading-relaxed text-sm text-center">
                   {t.christianDesc}
                 </p>
               </CardContent>
@@ -452,14 +502,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer with KVK and Insurance */}
-      <footer className="bg-primary text-primary-foreground py-12 border-t border-primary-foreground/20">
-        <div className="container">
+      {/* Footer with KVK and Insurance - Ocean Background */}
+      <footer 
+        className="py-12 relative overflow-hidden border-t border-primary-foreground/20"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.95), rgba(0, 60, 120, 0.95)), url(/ocean-view-1.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="container relative z-10">
           <div className="text-center mb-8">
-            <img src={APP_LOGO} alt="Solinvest" className="h-16 mx-auto mb-6 brightness-0 invert" />
+            <img src={APP_LOGO} alt="Solinvest" className="h-16 mx-auto mb-6 drop-shadow-xl" />
             
             {/* KVK and Insurance Information */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6 text-white">
               <div className="flex items-center gap-2">
                 <Building2 className="w-5 h-5" />
                 <span className="text-sm font-medium">{t.footerKVK}: [Your KVK Number]</span>
@@ -470,7 +527,7 @@ export default function Home() {
               </div>
             </div>
             
-            <p className="text-sm opacity-90">
+            <p className="text-sm text-white/90">
               {t.footerCopyright}
             </p>
           </div>
