@@ -131,4 +131,13 @@
 - [x] Toast messages em PT
 
 - [x] Testar a landing page v8
-- [ ] Criar checkpoint final v8
+- [x] Criar checkpoint final v8
+
+## Novas Funcionalidades Solicitadas (v9)
+
+- [x] Remover "Ecological" do título de Nuno (agora "Construction Specialist & Team Leader")
+- [x] Expandir descrição de Nuno para ter o mesmo tamanho da de Christiaan
+- [x] Atualizar traduções EN/NL/PT
+
+- [x] Testar a landing page v9
+- [ ] Criar checkpoint final v9
