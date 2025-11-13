@@ -101,4 +101,34 @@
 - [x] Traduzir novo copywriting para NL
 
 - [x] Testar a landing page v7
-- [ ] Criar checkpoint final v7
+- [x] Criar checkpoint final v7
+
+## Novas Funcionalidades Solicitadas (v8)
+
+### Português (PT) como Terceiro Idioma
+- [x] Adicionar PT ao seletor de idioma (EN | NL | PT)
+- [x] Criar traduções completas para PT em translations.ts
+- [x] Atualizar meta tags para suportar PT
+
+### Sticky Navigation Bar
+- [x] Criar navigation bar com links: Home | About | Services | Contact
+- [x] Implementar sticky behavior (fixa no topo ao scroll)
+- [x] Links para secções
+
+### Google Analytics 4
+- [x] Adicionar script GA4 no index.html com placeholder ID (G-XXXXXXX)
+- [x] Configurar event tracking para CTAs
+
+### Animações de Counter
+- [x] Implementar contador animado para stats (0 → 17%, 5-7%, 226%, €2,900)
+- [x] Trigger animation on scroll (Intersection Observer)
+- [x] Criar hook useCountUp customizado
+
+### Secção Join/CTA com Formulário
+- [x] Criar secção #join com formulário de email
+- [x] Input de email + botão "Get Exclusive Access"
+- [x] Validação básica de email
+- [x] Toast messages em PT
+
+- [x] Testar a landing page v8
+- [ ] Criar checkpoint final v8

@@ -1,4 +1,6 @@
-export const translations = {
+export type Language = 'en' | 'nl' | 'pt';
+
+export const translations: Record<Language, Record<string, string>> = {
   en: {
     // Hero Section
     heroTitle: "Invest in High-ROI Portuguese Real Estate",
@@ -192,7 +194,102 @@ export const translations = {
     footerCopyright: "Solinvest © 2025. Alle rechten voorbehouden.",
     footerKVK: "KVK Nummer: 75308045",
     footerInsurance: "Aansprakelijkheidsverzekering: €2.500.000",
+  },
+  
+  pt: {
+    // Hero Section
+    heroTitle: "Invista em Imobiliário de Alto ROI em Portugal",
+    heroSubtitle: "Oportunidades exclusivas off-market. Da prospeção à venda, gerimos tudo. Junte-se ao nosso grupo privado de investidores para achados únicos e retornos excecionais.",
+    heroCTA: "Junte-se Agora ao Nosso Grupo Privado",
+    scrollDown: "Role para descobrir mais",
+    
+    // Stats Section
+    statsTitle: "Portugal: Mercado Imobiliário #1 da Europa em 2025",
+    stat1Value: "17%",
+    stat1Label: "Crescimento em 2025",
+    stat1Desc: "Mercado de Crescimento Mais Rápido da Europa",
+    stat2Value: "5-7%",
+    stat2Label: "Rendimentos Brutos",
+    stat2Desc: "Aluguéis Premium em Lisboa & Porto",
+    stat3Value: "226%",
+    stat3Label: "Valorização Total (2015-2025)",
+    stat3Desc: "Melhor Desempenho da Europa",
+    stat4Value: "€2.900",
+    stat4Label: "Média por m²",
+    stat4Desc: "Nacional—Entrada Acessível ao Crescimento da UE",
+    
+    // About Section
+    aboutTitle: "Desenvolvimento Imobiliário Full-Service",
+    aboutSubtitle: "Da Pesquisa à Venda: Gerimos Tudo",
+    aboutText: "A Solinvest é uma empresa boutique de desenvolvimento imobiliário sediada em Portugal. Especializamo-nos em transformar propriedades únicas—quintas, vilas e projetos ecológicos—em ativos sustentáveis de alta qualidade. Através do nosso modelo de parceria transparente, oferecemos aos investidores acesso exclusivo a oportunidades que combinam arquitetura, natureza e retorno financeiro.",
+    aboutQuote: "Criamos desenvolvimento que eleva o potencial da propriedade enquanto preserva a integridade ecológica de Portugal.",
+    
+    // Process Section
+    processTitle: "Nosso Processo de Criação de Valor",
+    process1Title: "1. Prospeção Estratégica",
+    process1Desc: "Identificamos propriedades subvalorizadas com potencial de transformação através de nossa rede local.",
+    process2Title: "2. Gestão de Desenvolvimento",
+    process2Desc: "Supervisionamos design, licenciamento e construção com foco em sustentabilidade e qualidade.",
+    process3Title: "3. Serviços de Parceria",
+    process3Desc: "Oferecemos modelos de investimento flexíveis—desde joint ventures até gestão completa de projetos.",
+    process4Title: "4. Saída & ROI",
+    process4Desc: "Entregamos propriedades prontas para o mercado com retornos comprovados através de venda ou aluguel.",
+    
+    // Problem-Solving Section
+    problemTitle: "Resolvemos Seus Desafios de Investimento Imobiliário",
+    problem1Title: "Acesso a Oportunidades Off-Market",
+    problem1Desc: "Evite leilões competitivos. Nosso grupo privado recebe ofertas exclusivas antes de chegarem ao mercado público.",
+    problem2Title: "Gestão Full-Service (Prospeção → Venda)",
+    problem2Desc: "Sem complicações. Gerimos tudo: due diligence, licenças, construção, marketing e venda—você apenas colhe os lucros.",
+    problem3Title: "Conexões Locais & Expertise",
+    problem3Desc: "Evite armadilhas. Nossa equipe local navega pela burocracia portuguesa, regulamentos de construção e dinâmicas de mercado sem problemas.",
+    problem4Title: "ROI Comprovado & Transparência",
+    problem4Desc: "Sem surpresas. Fornecemos projeções claras de ROI, atualizações regulares e relatórios financeiros detalhados em cada etapa.",
+    
+    // Regions Section
+    regionsTitle: "Onde Investimos: Melhores Oportunidades de Portugal",
+    region1Title: "Setúbal & Arrábida",
+    region1Desc: "Proximidade a Lisboa, beleza natural intocada, preços acessíveis. Ideal para eco-resorts e vilas de luxo.",
+    region2Title: "Costa de Prata (Óbidos, Nazaré)",
+    region2Desc: "Charme histórico, turismo em crescimento, forte demanda de aluguel. Perfeito para conversões boutique.",
+    region3Title: "Lisboa & Arredores",
+    region3Desc: "Mercado principal de Portugal. Alta liquidez, forte apreciação, rendimentos de aluguel premium.",
+    region4Title: "Algarve",
+    region4Desc: "Destino turístico premium. Rendimentos de aluguel de férias elevados, demanda internacional consistente.",
+    regionsExpansion: "Em breve expandindo para Espanha e França",
+    
+    // Community Section
+    communityTitle: "Junte-se ao Nosso Grupo Privado de Investidores",
+    communitySubtitle: "Acesso Exclusivo a Achados Únicos",
+    communityText: "A Solinvest não é apenas um serviço de desenvolvimento—é uma comunidade de investidores experientes que partilham oportunidades off-market, insights de mercado e melhores práticas. Ao juntar-se ao nosso grupo privado WhatsApp, você receberá: alertas de propriedades exclusivas antes de listagens públicas, análises de mercado e atualizações de ROI, acesso direto aos fundadores Nuno e Christiaan, e networking com investidores que pensam como você. Espaço limitado para manter exclusividade. Junte-se hoje.",
+    
+    // Team Section
+    teamTitle: "Conheça Seus Parceiros: Expertise em Quem Pode Confiar",
+    teamSubtitle: "Uma Colaboração de Equipe Dedicada e Apaixonada",
+    nunoName: "Nuno Sousa",
+    nunoRole: "Especialista em Construção Ecológica",
+    nunoDesc: "Com mais de 10 anos de experiência em construção sustentável, Nuno garante que cada projeto Solinvest atenda aos mais altos padrões ecológicos enquanto maximiza a eficiência de custos. Sua expertise em materiais verdes e design energeticamente eficiente transforma propriedades em ativos sustentáveis de alto valor.",
+    christianName: "Christiaan Ticheler",
+    christianRole: "Especialista em Estratégia Imobiliária",
+    christianDesc: "Christiaan traz mais de 15 anos de experiência em investimento imobiliário e gestão de ativos, tendo trabalhado com portfólios no valor de €650M+ na Arcona Capital e Ticheler Taxatie. Sua visão estratégica identifica oportunidades subvalorizadas e estrutura acordos que entregam retornos excecionais aos investidores.",
+    
+    // Contact Section
+    contactTitle: "Comece Sua Jornada de Investimento Hoje",
+    contactSubtitle: "Pronto para Desbloquear Oportunidades Exclusivas e Retornos Excecionais em Portugal?",
+    contactText: "Entre em contato conosco para discutir suas metas de investimento e descobrir como a Solinvest pode ajudá-lo a alcançá-las.",
+    contactPhone1: "+31 629 841 297",
+    contactPhone1Lang: "EN / PT / FR / ES",
+    contactPhone2: "+31 615 079 953",
+    contactPhone2Lang: "NL / EN",
+    contactNameLabel: "Nome",
+    contactEmailLabel: "Email",
+    contactWhatsAppLabel: "WhatsApp (Opcional)",
+    contactMessageLabel: "Mensagem",
+    contactSubmit: "Enviar Mensagem",
+    
+    // Footer
+    footerCopyright: "Solinvest © 2025. Todos os direitos reservados.",
+    footerKVK: "KVK Nummer: 75308045",
+    footerInsurance: "Seguro de Responsabilidade: €2.500.000",
   }
 };
-
-export type Language = 'en' | 'nl';

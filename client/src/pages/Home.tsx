@@ -15,9 +15,39 @@ import {
   Phone,
   Shield
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useCountUp } from "@/hooks/useCountUp";
 import { toast } from "sonner";
 import { translations, type Language } from "@/translations";
+
+
+function CounterCard({ value, label, desc, language }: { value: string, label: string, desc: string, language: Language }) {
+  // Extract number from value string (e.g., "17%" -> 17, "€2,900" -> 2900)
+  const numMatch = value.match(/[\d,]+/);
+  const targetNum = numMatch ? parseInt(numMatch[0].replace(/,/g, '')) : 0;
+  const { count, ref } = useCountUp(targetNum, 2000);
+  
+  // Reconstruct the value with animated count
+  let displayValue = value;
+  if (value.includes('%')) {
+    displayValue = `${count}%`;
+  } else if (value.includes('€')) {
+    displayValue = `€${count.toLocaleString()}`;
+  } else if (value.includes('-')) {
+    // For ranges like "5-7%", just show the value as is
+    displayValue = value;
+  }
+  
+  return (
+    <Card ref={ref} className="bg-white/95 backdrop-blur-sm">
+      <CardContent className="pt-8 pb-6 text-center">
+        <h3 className="text-4xl md:text-5xl font-bold text-primary mb-2">{displayValue}</h3>
+        <p className="text-lg font-semibold text-foreground mb-1">{label}</p>
+        <p className="text-sm text-muted-foreground">{desc}</p>
+      </CardContent>
+    </Card>
+  );
+}
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>('en');
@@ -33,7 +63,12 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success(language === 'en' ? "Thank you for your interest! We'll be in touch soon." : "Bedankt voor uw interesse! We nemen binnenkort contact op.");
+    const messages = {
+      en: "Thank you for your interest! We'll be in touch soon.",
+      nl: "Bedankt voor uw interesse! We nemen binnenkort contact op.",
+      pt: "Obrigado pelo seu interesse! Entraremos em contato em breve."
+    };
+    toast.success(messages[language]);
     setFormData({ name: "", email: "", whatsapp: "", message: "" });
   };
 
@@ -52,9 +87,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Simplified Navigation Header - Completely Invisible */}
-      <nav className="fixed top-0 left-0 right-0 z-50">
-        <div className="container flex items-center justify-end py-4">
+      {/* Sticky Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm shadow-md">
+        <div className="container flex items-center justify-between py-3">
+          {/* Navigation Links */}
+          <div className="hidden md:flex items-center gap-6">
+            <a href="#home" className="text-sm font-medium text-white hover:text-accent transition-colors">
+              {language === 'en' ? 'Home' : language === 'nl' ? 'Home' : 'Início'}
+            </a>
+            <a href="#about" className="text-sm font-medium text-white hover:text-accent transition-colors">
+              {language === 'en' ? 'About' : language === 'nl' ? 'Over' : 'Sobre'}
+            </a>
+            <a href="#services" className="text-sm font-medium text-white hover:text-accent transition-colors">
+              {language === 'en' ? 'Services' : language === 'nl' ? 'Diensten' : 'Serviços'}
+            </a>
+            <a href="#contact" className="text-sm font-medium text-white hover:text-accent transition-colors">
+              {language === 'en' ? 'Contact' : language === 'nl' ? 'Contact' : 'Contato'}
+            </a>
+          </div>
           <div className="flex gap-2 bg-black/30 rounded-lg p-1">
             <button
               onClick={() => setLanguage('en')}
@@ -71,6 +121,14 @@ export default function Home() {
               }`}
             >
               NL
+            </button>
+            <button
+              onClick={() => setLanguage('pt')}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                language === 'pt' ? 'bg-white text-primary' : 'text-white hover:text-white/80'
+              }`}
+            >
+              PT
             </button>
           </div>
         </div>
