@@ -75,4 +75,30 @@
 - [x] Remover completamente o backdrop-blur da navegação (apenas botões de idioma, sem fundo)
 - [x] Extrair KVK nummer do CV de Nuno (75308045) e substituir placeholder no rodapé
 - [x] Testar a landing page v6
-- [ ] Criar checkpoint final v6
+- [x] Criar checkpoint final v6
+
+## Novas Funcionalidades Solicitadas (v7)
+
+### SEO Técnico
+- [x] Adicionar canonical tag no index.html
+- [x] Adicionar meta tags Open Graph (Facebook/LinkedIn)
+- [x] Adicionar meta tags Twitter Card
+- [x] Adicionar Schema.org structured data (RealEstateAgent)
+- [x] Criar sitemap.xml
+- [x] Criar robots.txt
+- [x] Meta description otimizada
+- [x] Meta keywords
+- [x] Google Fonts (Poppins + Inter)
+
+### Copywriting Atualizado
+- [x] Atualizar Hero title EN: "Invest in High-ROI Portuguese Real Estate"
+- [x] Atualizar Hero subtitle EN: "Exclusive off-market opportunities. From sourcing to sale, we handle everything. Join our private investor group for unique findings and exceptional returns."
+- [x] Atualizar stats para dados otimizados Q4 2025:
+  - 17% YoY Growth (Europe's Fastest-Rising Market)
+  - 5-7% Gross Yields (Prime Lisbon & Porto Rentals)
+  - 226% Total Appreciation (2015-2025, Europe's Top Performer)
+  - €2,900 Avg. per m² (National—Affordable Entry to EU Growth)
+- [x] Traduzir novo copywriting para NL
+
+- [x] Testar a landing page v7
+- [ ] Criar checkpoint final v7

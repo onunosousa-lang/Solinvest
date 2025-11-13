@@ -1,0 +1,12 @@
+# Solinvest - Robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://solinvest-sjbe9utw.manus.space/sitemap.xml
+
+# Disallow admin/internal paths (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
