@@ -92,16 +92,16 @@ export default function Home() {
         <div className="container flex items-center justify-between py-3">
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="#home" className="text-sm font-medium text-white hover:text-accent transition-colors">
+            <a href="#home" onClick={(e) => { e.preventDefault(); document.getElementById("home")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Home' : language === 'nl' ? 'Home' : 'Início'}
             </a>
-            <a href="#about" className="text-sm font-medium text-white hover:text-accent transition-colors">
+            <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById("about")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'About' : language === 'nl' ? 'Over' : 'Sobre'}
             </a>
-            <a href="#services" className="text-sm font-medium text-white hover:text-accent transition-colors">
+            <a href="#services" onClick={(e) => { e.preventDefault(); document.getElementById("services")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Services' : language === 'nl' ? 'Diensten' : 'Serviços'}
             </a>
-            <a href="#contact" className="text-sm font-medium text-white hover:text-accent transition-colors">
+            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Contact' : language === 'nl' ? 'Contact' : 'Contato'}
             </a>
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section with Large Logo */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section with Ocean Background */}
-      <section 
+      <section id="stats" 
         className="py-20 relative overflow-hidden"
         style={{
           backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.92), rgba(0, 60, 120, 0.92)), url(/ocean-view-2.jpg)",
@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* About Section with Ocean Background */}
-      <section 
+      <section id="about" 
         className="py-20 relative overflow-hidden"
         style={{
           backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(/ocean-view-1.jpg)",
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* Process Section with Ocean Background */}
-      <section 
+      <section id="services" 
         className="py-20 relative overflow-hidden"
         style={{
           backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)), url(/ocean-view-3.jpg)",
@@ -376,7 +376,7 @@ export default function Home() {
       </section>
 
       {/* Team Section - Moved to End with Reduced Photo Sizes */}
-      <section 
+      <section id="team" 
         className="py-20 relative overflow-hidden"
         style={{
           backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ocean-view-4.jpg)",

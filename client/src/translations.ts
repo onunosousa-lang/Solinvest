@@ -222,7 +222,7 @@ export const translations: Record<Language, Record<string, string>> = {
     aboutTitle: "Desenvolvimento Imobiliário Full-Service",
     aboutSubtitle: "Da Pesquisa à Venda: Gerimos Tudo",
     aboutText: "A Solinvest é uma empresa boutique de desenvolvimento imobiliário sediada em Portugal. Especializamo-nos em transformar propriedades únicas—quintas, vilas e projetos ecológicos—em ativos sustentáveis de alta qualidade. Através do nosso modelo de parceria transparente, oferecemos aos investidores acesso exclusivo a oportunidades que combinam arquitetura, natureza e retorno financeiro.",
-    aboutQuote: "Criamos desenvolvimento que eleva o potencial da propriedade enquanto preserva a integridade ecológica de Portugal.",
+    aboutVision: "Nossa Visão: Criar desenvolvimentos que entregam ROI excepcional enquanto preservam o charme autêntico da vida portuguesa.",
     
     // Process Section
     processTitle: "Nosso Processo de Criação de Valor",

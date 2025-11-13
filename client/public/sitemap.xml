@@ -2,11 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://solinvest-sjbe9utw.manus.space/</loc>
-    <lastmod>2025-01-13</lastmod>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/</loc>
+    <lastmod>2025-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://solinvest-sjbe9utw.manus.space/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://solinvest-sjbe9utw.manus.space/?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/?lang=pt" />
+  </url>
+  <url>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/#home</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/#about</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/#services</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/#team</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://solinvestlanding-o604vbxmw-nuno-sousa.vercel.app/#contact</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>

@@ -148,4 +148,28 @@
 - [x] Garantir que ambos os perfis tenham formatação CSS idêntica (removido text-sm de Christiaan)
 
 - [x] Testar a landing page v10
-- [ ] Criar checkpoint final v10
+- [x] Criar checkpoint final v10
+
+## Deploy no Vercel
+
+- [x] Verificar ferramentas Vercel MCP disponíveis
+- [x] Criar repositório GitHub "Solinvest" (https://github.com/onunosousa-lang/Solinvest)
+- [x] Inicializar Git no projeto
+- [x] Fazer commit e push para GitHub (206 ficheiros)
+- [x] Instalar Vercel CLI
+- [x] Autenticar Vercel CLI
+- [x] Fazer deploy no Vercel
+- [x] Conectar repositório GitHub ao Vercel
+- [ ] Configurar domínio personalizado (opcional)
+
+## Novas Funcionalidades Solicitadas (v11)
+
+- [x] Fazer os botões da navegação funcionarem (scroll suave para secções)
+- [x] Adicionar IDs às secções para navegação (home, about, services, team, contact)
+- [x] Verificar e substituir todos os placeholders "-------" (apenas comentários decorativos em Map.tsx)
+- [x] Criar sitemap.xml funcional com URLs reais do Vercel
+- [x] Corrigir secção About em Português (aboutQuote → aboutVision)
+
+- [x] Testar a landing page v11
+- [ ] Criar checkpoint final v11
+- [ ] Deploy no Vercel
