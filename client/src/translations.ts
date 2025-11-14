@@ -26,7 +26,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // About Section
     aboutTitle: "Full-Service Real Estate Development",
     aboutSubtitle: "From Research to Sale: We Handle Everything",
-    aboutText: "Solinvest is a boutique real estate development firm based in Portugal. We specialize in transforming unique properties—rural estates, villas, and eco-projects—into high-value, sustainable assets. Through our transparent partnership model, we offer investors exclusive access to opportunities that combine architecture, nature, and financial returns.",
+    aboutText: "Solinvest is a boutique real-estate development and advisory firm operating between the Netherlands and Portugal.\n\nWe provide a full end-to-end development service: sourcing high-potential properties, securing the right investors, managing the entire design and construction process, and handling the sales strategy.\n\nOur focus includes rural estates, coastal properties, villas, and unique development opportunities—transforming them into high-quality, high-value assets.\n\nFor individuals dreaming of a place in the sun, we offer trusted guidance, access to real market prices, and a fully managed, hassle-free experience from acquisition to completion.\n\nA professional, transparent bridge between investors, development, and Portuguese real estate.",
     aboutVision: "Our Vision: Create developments that deliver exceptional ROI while preserving the authentic charm of Portuguese living.",
     
     // Team Section
@@ -123,7 +123,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // About Section
     aboutTitle: "Full-Service Vastgoedontwikkeling",
     aboutSubtitle: "Van Research tot Verkoop: Wij Regelen Alles",
-    aboutText: "Solinvest is een boutique vastgoedontwikkelingsbedrijf gevestigd in Portugal. Wij zijn gespecialiseerd in het transformeren van unieke eigendommen—landgoederen, villa's en eco-projecten—in hoogwaardige, duurzame activa. Via ons transparante partnerschapsmodel bieden wij investeerders exclusieve toegang tot kansen die architectuur, natuur en financieel rendement combineren.",
+    aboutText: "Solinvest is een boutique vastgoedontwikkelings- en adviesbureau dat opereert tussen Nederland en Portugal.\n\nWij bieden een volledige end-to-end ontwikkelingsservice: het sourcen van hoogpotentiële eigendommen, het veiligstellen van de juiste investeerders, het beheren van het gehele ontwerp- en bouwproces, en het afhandelen van de verkoopstrategie.\n\nOnze focus omvat landgoederen, kustpanden, villa's en unieke ontwikkelingsmogelijkheden—deze transformeren we in hoogwaardige, hoogwaardige activa.\n\nVoor individuen die dromen van een plek in de zon, bieden wij vertrouwde begeleiding, toegang tot echte marktprijzen, en een volledig beheerde, zorgeloze ervaring van aankoop tot oplevering.\n\nEen professionele, transparante brug tussen investeerders, ontwikkeling en Portugees vastgoed.",
     aboutVision: "Onze Visie: Ontwikkelingen creëren die uitzonderlijk ROI leveren terwijl de authentieke charme van Portugees leven behouden blijft.",
     
     // Team Section
@@ -221,7 +221,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // About Section
     aboutTitle: "Desenvolvimento Imobiliário Full-Service",
     aboutSubtitle: "Da Pesquisa à Venda: Gerimos Tudo",
-    aboutText: "A Solinvest é uma empresa boutique de desenvolvimento imobiliário sediada em Portugal. Especializamo-nos em transformar propriedades únicas—quintas, vilas e projetos ecológicos—em ativos sustentáveis de alta qualidade. Através do nosso modelo de parceria transparente, oferecemos aos investidores acesso exclusivo a oportunidades que combinam arquitetura, natureza e retorno financeiro.",
+    aboutText: "A Solinvest é uma empresa boutique de desenvolvimento imobiliário e consultoria que opera entre os Países Baixos e Portugal.\n\nFornecemos um serviço completo de desenvolvimento end-to-end: identificação de propriedades de alto potencial, garantia dos investidores certos, gestão de todo o processo de design e construção, e execução da estratégia de vendas.\n\nO nosso foco inclui quintas rurais, propriedades costeiras, vilas e oportunidades de desenvolvimento únicas—transformando-as em ativos de alta qualidade e alto valor.\n\nPara indivíduos que sonham com um lugar ao sol, oferecemos orientação confiável, acesso a preços reais de mercado e uma experiência totalmente gerida e sem complicações, desde a aquisição até a conclusão.\n\nUma ponte profissional e transparente entre investidores, desenvolvimento e imóveis portugueses.",
     aboutVision: "Nossa Visão: Criar desenvolvimentos que entregam ROI excepcional enquanto preservam o charme autêntico da vida portuguesa.",
     
     // Process Section

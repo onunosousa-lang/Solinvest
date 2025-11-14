@@ -173,3 +173,11 @@
 - [x] Testar a landing page v11
 - [ ] Criar checkpoint final v11
 - [ ] Deploy no Vercel
+
+## Novas Funcionalidades Solicitadas (v12)
+
+- [x] Atualizar texto da secção About com nova descrição detalhada
+- [x] Traduzir nova descrição para NL e PT
+- [x] Testar a landing page v12
+- [ ] Criar checkpoint final v12
+- [ ] Deploy no Vercel
