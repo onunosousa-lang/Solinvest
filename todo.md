@@ -179,5 +179,5 @@
 - [x] Atualizar texto da secção About com nova descrição detalhada
 - [x] Traduzir nova descrição para NL e PT
 - [x] Testar a landing page v12
-- [ ] Criar checkpoint final v12
+- [x] Criar checkpoint final v12
 - [ ] Deploy no Vercel
