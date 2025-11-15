@@ -42,4 +42,26 @@
 - [x] Adicionar favicon personalizado (logo Solinvest copiado para /client/public/favicon.png)
 - [x] Testar localmente (build concluído com sucesso)
 - [x] Criar checkpoint v17
+- [x] Push para GitHub
+
+## v18 - Adaptar Backend para Vercel Serverless
+- [ ] Analisar estrutura atual do servidor Express/tRPC
+- [ ] Criar Vercel serverless function para tRPC em /api/trpc/[trpc].ts
+- [ ] Adaptar conexões de base de dados para serverless (connection pooling)
+- [ ] Atualizar vercel.json com rewrites para rotas API
+- [ ] Configurar variáveis de ambiente (DATABASE_URL, etc.)
+- [ ] Converter Express app.listen() para handler exports
+- [ ] Testar localmente
+- [ ] Criar checkpoint v18
+- [ ] Push para GitHub
+
+## v19 - Melhorias Essenciais de SEO
+- [x] Verificar sitemap.xml (EN/NL/PT versions) - OK, já inclui hreflang
+- [x] Verificar robots.txt - OK
+- [x] Adicionar JSON-LD schema para RealEstateAgent
+- [x] Verificar alt tags em todas as imagens (logo, team photos - todos otimizados)
+- [x] Otimizar meta description com keywords relevantes (Portuguese Real Estate Investment, Property Development)
+- [x] Otimizar headings com keywords (H1: Portuguese Real Estate, H2: Portuguese Real Estate Investment, Property Development Portugal)
+- [x] Testar localmente (build concluído com sucesso)
+- [ ] Criar checkpoint v19
 - [ ] Push para GitHub

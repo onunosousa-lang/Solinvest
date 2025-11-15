@@ -175,7 +175,7 @@ export default function Home() {
           {/* Large Logo Above Title - 2x Bigger */}
           <img 
             src={APP_LOGO} 
-            alt="Solinvest" 
+            alt="Solinvest - Portuguese Real Estate Investment & Property Development" 
             className="h-64 md:h-80 mx-auto mb-8 drop-shadow-2xl" 
           />
           

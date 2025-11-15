@@ -9,7 +9,7 @@ export const translations: Record<Language, Record<string, string>> = {
     scrollDown: "Scroll to discover more",
     
     // Stats Section
-    statsTitle: "Portugal: Europe's #1 Property Market in 2025",
+    statsTitle: "Portuguese Real Estate Investment: Europe's #1 Property Market in 2025",
     stat1Value: "17%",
     stat1Label: "YoY Growth in 2025",
     stat1Desc: "Europe's Fastest-Rising Market",
@@ -24,7 +24,7 @@ export const translations: Record<Language, Record<string, string>> = {
     stat4Desc: "National—Affordable Entry to EU Growth",
     
     // About Section
-    aboutTitle: "Full-Service Real Estate Development",
+    aboutTitle: "Full-Service Property Development Portugal",
     aboutSubtitle: "From Research to Sale: We Handle Everything",
     aboutText: "Solinvest is a boutique real-estate development and advisory firm operating between the Netherlands and Portugal.\n\nWe provide a full end-to-end development service: sourcing high-potential properties, securing the right investors, managing the entire design and construction process, and handling the sales strategy.\n\nOur focus includes rural estates, coastal properties, villas, and unique development opportunities—transforming them into high-quality, high-value assets.\n\nFor individuals dreaming of a place in the sun, we offer trusted guidance, access to real market prices, and a fully managed, hassle-free experience from acquisition to completion.\n\nA professional, transparent bridge between investors, development, and Portuguese real estate.",
     aboutVision: "Our Vision: Create developments that deliver exceptional ROI while preserving the authentic charm of Portuguese living.",
