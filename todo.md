@@ -51,7 +51,7 @@
 - [ ] Atualizar vercel.json com rewrites para rotas API
 - [ ] Configurar variáveis de ambiente (DATABASE_URL, etc.)
 - [ ] Converter Express app.listen() para handler exports
-- [ ] Testar localmente
+- [x] Testar localmente (build concluído com sucesso)
 - [ ] Criar checkpoint v18
 - [ ] Push para GitHub
 
@@ -64,4 +64,10 @@
 - [x] Otimizar headings com keywords (H1: Portuguese Real Estate, H2: Portuguese Real Estate Investment, Property Development Portugal)
 - [x] Testar localmente (build concluído com sucesso)
 - [x] Criar checkpoint v19
+- [x] Push para GitHub
+
+## v20 - Google Analytics 4
+- [x] Atualizar GA4 tracking code com ID real (G-PEXDMEJPJ2)
+- [x] Testar localmente (build concluído com sucesso)
+- [ ] Criar checkpoint v20
 - [ ] Push para GitHub
