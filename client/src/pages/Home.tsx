@@ -1,6 +1,4 @@
-import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { trpc } from "@/lib/trpc";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -52,10 +50,6 @@ function CounterCard({ value, label, desc, language }: { value: string, label: s
 }
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
   const [language, setLanguage] = useState<Language>('en');
   const [formData, setFormData] = useState({
     name: "",
@@ -67,36 +61,15 @@ export default function Home() {
   const t = translations[language];
   const whatsappLink = "https://wa.me/31629841297?text=Hi%2C%20I%27d%20like%20to%20join%20the%20Solinvest%20private%20investor%20group";
 
-  const sendContactMutation = trpc.contact.send.useMutation({
-    onSuccess: () => {
-      const messages = {
-        en: "Thank you for your interest! We'll be in touch soon.",
-        nl: "Bedankt voor uw interesse! We nemen binnenkort contact op.",
-        pt: "Obrigado pelo seu interesse! Entraremos em contato em breve."
-      };
-      toast.success(messages[language]);
-      setFormData({ name: "", email: "", whatsapp: "", message: "" });
-    },
-    onError: (error) => {
-      const messages = {
-        en: "Failed to send message. Please try again.",
-        nl: "Kan bericht niet verzenden. Probeer het opnieuw.",
-        pt: "Falha ao enviar mensagem. Por favor, tente novamente."
-      };
-      toast.error(messages[language]);
-      console.error("Contact form error:", error);
-    },
-  });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    sendContactMutation.mutate({
-      name: formData.name,
-      email: formData.email,
-      whatsapp: formData.whatsapp || undefined,
-      message: formData.message,
-      language,
-    });
+    const messages = {
+      en: "Thank you for your interest! We'll be in touch soon.",
+      nl: "Bedankt voor uw interesse! We nemen binnenkort contact op.",
+      pt: "Obrigado pelo seu interesse! Entraremos em contato em breve."
+    };
+    toast.success(messages[language]);
+    setFormData({ name: "", email: "", whatsapp: "", message: "" });
   };
 
   const WhatsAppCTA = ({ className = "" }: { className?: string }) => (
@@ -161,7 +134,6 @@ export default function Home() {
         </div>
       </nav>
 
-      <main>
       {/* Hero Section with Large Logo */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div
@@ -426,9 +398,8 @@ export default function Home() {
               <CardContent className="p-8">
                 <div className="flex flex-col items-center mb-6">
                   <img 
-                    src="/nuno-photo.png"
-                    alt="Nuno Sousa - Construction Specialist & Team Leader at Solinvest"
-                    loading="lazy"
+                    src="/nuno-photo.png" 
+                    alt="Nuno Sousa" 
                     className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-accent shadow-lg"
                   />
                   <div className="text-center">
@@ -450,9 +421,8 @@ export default function Home() {
               <CardContent className="p-8">
                 <div className="flex flex-col items-center mb-6">
                   <img 
-                    src="/christiaan-photo.jpg"
-                    alt="Christiaan Ticheler - Real Estate Strategy & Finance Expert at Solinvest"
-                    loading="lazy"
+                    src="/christiaan-photo.jpg" 
+                    alt="Christiaan Ticheler" 
                     className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-secondary shadow-lg"
                   />
                   <div className="text-center">
@@ -577,25 +547,10 @@ export default function Home() {
                       className="w-full min-h-32"
                     />
                   </div>
-                  <Button 
-                    type="submit" 
-                    size="lg" 
-                    className="w-full text-lg bg-primary hover:bg-primary/90"
-                    disabled={sendContactMutation.isPending}
-                  >
-                    {sendContactMutation.isPending ? (
-                      language === 'en' ? 'Sending...' : language === 'nl' ? 'Verzenden...' : 'Enviando...'
-                    ) : (
-                      t.contactSubmit
-                    )}
+                  <Button type="submit" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90">
+                    {t.contactSubmit}
                   </Button>
                 </form>
-                <p className="text-xs text-center mt-4 text-muted-foreground">
-                  {language === 'en' ? 'Or email us at' : language === 'nl' ? 'Of e-mail ons op' : 'Ou envie-nos um email para'}{' '}
-                  <a href="mailto:info@solinvest.net" className="text-primary hover:text-primary/80 font-medium underline">
-                    info@solinvest.net
-                  </a>
-                </p>
               </CardContent>
             </Card>
             <div className="text-center mt-8">
@@ -604,8 +559,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      </main>
 
       {/* Footer with KVK and Insurance - Ocean Background */}
       <footer 
@@ -618,7 +571,7 @@ export default function Home() {
       >
         <div className="container relative z-10">
           <div className="text-center mb-8">
-            <img src={APP_LOGO} alt="Solinvest - Property Development Portugal" className="h-16 mx-auto mb-6 drop-shadow-xl" loading="lazy" />
+            <img src={APP_LOGO} alt="Solinvest" className="h-16 mx-auto mb-6 drop-shadow-xl" />
             
             {/* KVK and Insurance Information */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6 text-white">

@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.solinvest.net/sitemap.xml
+Sitemap: https://solinvest-sjbe9utw.manus.space/sitemap.xml
 
 # Disallow admin/internal paths (if any in future)
 # Disallow: /admin/
