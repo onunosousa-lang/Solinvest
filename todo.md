@@ -69,5 +69,5 @@
 ## v20 - Google Analytics 4
 - [x] Atualizar GA4 tracking code com ID real (G-PEXDMEJPJ2)
 - [x] Testar localmente (build concluído com sucesso)
-- [ ] Criar checkpoint v20
+- [x] Criar checkpoint v20
 - [ ] Push para GitHub
