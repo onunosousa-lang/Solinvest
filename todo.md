@@ -30,8 +30,8 @@
 - [ ] Verificar deploy no Vercel
 
 ## Bug - Erro 404 no Vercel
-- [ ] Verificar status do deploy no Vercel
-- [ ] Verificar logs de build
+- [x] Verificar status do deploy no Vercel
+- [x] Verificar logs de build
 - [x] Identificar causa do erro 404 (falta outputDirectory no vercel.json)
 - [x] Corrigir configuração (adicionar buildCommand e outputDirectory)
-- [ ] Testar site após correção
+- [x] Testar site após correção (SITE FUNCIONANDO!)
