@@ -25,6 +25,13 @@
 
 ### Deploy
 - [x] Testar localmente (sem erros TypeScript)
-- [ ] Criar checkpoint v15
+- [x] Criar checkpoint v15
 - [x] Push para GitHub
 - [ ] Verificar deploy no Vercel
+
+## Bug - Erro 404 no Vercel
+- [ ] Verificar status do deploy no Vercel
+- [ ] Verificar logs de build
+- [x] Identificar causa do erro 404 (falta outputDirectory no vercel.json)
+- [x] Corrigir configuração (adicionar buildCommand e outputDirectory)
+- [ ] Testar site após correção
