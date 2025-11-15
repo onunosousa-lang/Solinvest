@@ -27,7 +27,8 @@
 - [x] Testar localmente (sem erros TypeScript)
 - [x] Criar checkpoint v15
 - [x] Push para GitHub
-- [ ] Verificar deploy no Vercel
+- [x] Verificar deploy no Vercel (site funcionando perfeitamente)
+- [x] Criar checkpoint v16
 
 ## Bug - Erro 404 no Vercel
 - [x] Verificar status do deploy no Vercel
@@ -35,3 +36,10 @@
 - [x] Identificar causa do erro 404 (falta outputDirectory no vercel.json)
 - [x] Corrigir configuração (adicionar buildCommand e outputDirectory)
 - [x] Testar site após correção (SITE FUNCIONANDO!)
+
+## v17 - Correções Finais
+- [x] Corrigir título do site (agora: Solinvest — Property Development & Investor Deals in Portugal)
+- [x] Adicionar favicon personalizado (logo Solinvest copiado para /client/public/favicon.png)
+- [x] Testar localmente (build concluído com sucesso)
+- [ ] Criar checkpoint v17
+- [ ] Push para GitHub
