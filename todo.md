@@ -225,6 +225,6 @@
 
 ### Deploy
 - [x] Testar todas as mudanças localmente (site funcionando perfeitamente)
-- [ ] Criar checkpoint v14
+- [x] Criar checkpoint v14
 - [ ] Deploy no Vercel
 - [ ] Push para GitHub
