@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -61,15 +62,42 @@ export default function Home() {
   const t = translations[language];
   const whatsappLink = "https://wa.me/31629841297?text=Hi%2C%20I%27d%20like%20to%20join%20the%20Solinvest%20private%20investor%20group";
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const messages = {
-      en: "Thank you for your interest! We'll be in touch soon.",
-      nl: "Bedankt voor uw interesse! We nemen binnenkort contact op.",
-      pt: "Obrigado pelo seu interesse! Entraremos em contato em breve."
-    };
-    toast.success(messages[language]);
-    setFormData({ name: "", email: "", whatsapp: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      const messages = {
+        en: "Thank you for your message! We'll be in touch soon.",
+        nl: "Bedankt voor uw bericht! We nemen binnenkort contact op.",
+        pt: "Obrigado pela sua mensagem! Entraremos em contato em breve."
+      };
+      toast.success(messages[language]);
+      setFormData({ name: "", email: "", whatsapp: "", message: "" });
+    } catch (error) {
+      const errorMessages = {
+        en: "Failed to send message. Please try again or contact us directly at info@solinvest.net",
+        nl: "Bericht verzenden mislukt. Probeer het opnieuw of neem direct contact op via info@solinvest.net",
+        pt: "Falha ao enviar mensagem. Tente novamente ou contacte-nos diretamente em info@solinvest.net"
+      };
+      toast.error(errorMessages[language]);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const WhatsAppCTA = ({ className = "" }: { className?: string }) => (
@@ -88,7 +116,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Sticky Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm shadow-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm shadow-md" role="navigation" aria-label="Main navigation">
         <div className="container flex items-center justify-between py-3">
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-6">
@@ -399,7 +427,8 @@ export default function Home() {
                 <div className="flex flex-col items-center mb-6">
                   <img 
                     src="/nuno-photo.png" 
-                    alt="Nuno Sousa" 
+                    alt="Nuno Sousa - Construction Specialist & Team Leader at Solinvest"
+                    loading="lazy" 
                     className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-accent shadow-lg"
                   />
                   <div className="text-center">
@@ -422,7 +451,8 @@ export default function Home() {
                 <div className="flex flex-col items-center mb-6">
                   <img 
                     src="/christiaan-photo.jpg" 
-                    alt="Christiaan Ticheler" 
+                    alt="Christiaan Ticheler - Real Estate Strategy Expert at Solinvest"
+                    loading="lazy" 
                     className="w-32 h-32 rounded-full object-cover mb-4 border-4 border-secondary shadow-lg"
                   />
                   <div className="text-center">
@@ -547,13 +577,17 @@ export default function Home() {
                       className="w-full min-h-32"
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90">
-                    {t.contactSubmit}
+                  <Button type="submit" size="lg" className="w-full text-lg bg-primary hover:bg-primary/90" disabled={isSubmitting}>
+                    {isSubmitting ? (language === 'en' ? 'Sending...' : language === 'nl' ? 'Verzenden...' : 'Enviando...') : t.contactSubmit}
                   </Button>
                 </form>
               </CardContent>
             </Card>
-            <div className="text-center mt-8">
+            <div className="text-center mt-6">
+              <p className="text-sm text-muted-foreground mb-4">
+                {language === 'en' ? 'Or email us directly at' : language === 'nl' ? 'Of email ons direct op' : 'Ou envie-nos um email diretamente para'}{' '}
+                <a href="mailto:info@solinvest.net" className="text-accent hover:underline font-medium">info@solinvest.net</a>
+              </p>
               <WhatsAppCTA />
             </div>
           </div>
@@ -571,7 +605,7 @@ export default function Home() {
       >
         <div className="container relative z-10">
           <div className="text-center mb-8">
-            <img src={APP_LOGO} alt="Solinvest" className="h-16 mx-auto mb-6 drop-shadow-xl" />
+            <img src={APP_LOGO} alt="Solinvest Logo" className="h-16 mx-auto mb-6 drop-shadow-xl" loading="lazy" />
             
             {/* KVK and Insurance Information */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6 text-white">
