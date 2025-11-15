@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1763237528823,
+      "tag": "0000_chief_monster_badoon",
+      "breakpoints": true
+    }
+  ]
+}

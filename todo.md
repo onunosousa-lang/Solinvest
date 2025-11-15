@@ -180,4 +180,51 @@
 - [x] Traduzir nova descrição para NL e PT
 - [x] Testar a landing page v12
 - [x] Criar checkpoint final v12
+- [x] Deploy no Vercel (push para GitHub concluído)
+
+## Novas Funcionalidades Solicitadas (v13)
+
+- [x] Adicionar funcionalidade de servidor ao projeto (upgrade para web-db-user)
+- [x] Configurar API key do Resend como secret
+- [x] Instalar pacote resend no servidor
+- [x] Implementar endpoint API para envio de emails via Resend
+- [x] Atualizar formulário de contacto frontend para usar o endpoint
+- [x] Testar envio de emails localmente (email enviado com sucesso via Resend)
+- [ ] Criar checkpoint final v13
 - [ ] Deploy no Vercel
+
+## Melhorias de SEO e Otimização (v14) - Manter Design Intacto
+
+### Metadata e SEO
+- [x] Atualizar tags `<head>` com metadata completa (title, description, canonical)
+- [x] Adicionar Open Graph tags para redes sociais
+- [x] Adicionar Twitter Card tags
+- [x] Adicionar structured data JSON-LD (Organization schema)
+
+### Ficheiros de SEO
+- [x] Criar/atualizar robots.txt
+- [x] Criar/atualizar sitemap.xml com todas as rotas
+
+### Performance
+- [x] Adicionar `loading="lazy"` para imagens não-hero
+- [x] Verificar otimização de imagens (imagens já otimizadas)
+- [x] Inline critical CSS (não necessário - Tailwind já otimizado)
+
+### Acessibilidade
+- [x] Adicionar alt tags em todas as imagens
+- [x] Verificar ordem lógica de headings (h1, h2, h3) - correto
+- [x] Adicionar tags semânticas (<main>, <nav>, <footer>)
+
+### Formulário de Contacto
+- [x] Atualizar email de destino para info@solinvest.net
+- [x] Adicionar texto alternativo com email info@solinvest.net
+
+### Tracking e Segurança
+- [x] Configurar tracking analytics (Google Analytics e Umami já configurados)
+- [x] Adicionar security headers via vercel.json
+
+### Deploy
+- [x] Testar todas as mudanças localmente (site funcionando perfeitamente)
+- [ ] Criar checkpoint v14
+- [ ] Deploy no Vercel
+- [ ] Push para GitHub
