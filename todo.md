@@ -41,5 +41,5 @@
 - [x] Corrigir título do site (agora: Solinvest — Property Development & Investor Deals in Portugal)
 - [x] Adicionar favicon personalizado (logo Solinvest copiado para /client/public/favicon.png)
 - [x] Testar localmente (build concluído com sucesso)
-- [ ] Criar checkpoint v17
+- [x] Criar checkpoint v17
 - [ ] Push para GitHub
