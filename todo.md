@@ -197,6 +197,7 @@
 - [x] Identificar TODAS as diferenças, cortes, resumos ou paráfrases (traduções EN JÁ ESTAVAM 100% completas!)
 - [x] Atualizar translations.ts EN com texto EXATO palavra por palavra do artigo (JÁ ESTAVA COMPLETO)
 - [x] Corrigir WhyPortugal.tsx para usar TODAS as traduções corretas (internationalInvestorsText1-6, livingInPortugalText3-4, culturalAssetsText2, investmentThesisText1-4, foreignInvestmentText3, finalCTAText)
-- [ ] Testar build local
-- [ ] Push para GitHub
-- [ ] Verificar deploy no Vercel (texto 100% completo)
+- [x] Testar build local (SUCESSO - 0 erros TypeScript)
+- [x] Push para GitHub (commit c6836d6)
+- [x] Aguardar deploy Vercel (~30-40 segundos)
+- [x] Verificar deploy no Vercel (TEXTO 100% COMPLETO! Todas as 6 secções internationalInvestors, livingInPortugal 1-4, culturalAssets 1-2, investmentThesis 1-4, foreignInvestment 1-3, finalCTA, sources - TUDO PRESENTE!)
