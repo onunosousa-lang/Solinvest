@@ -108,7 +108,21 @@ export default function WhyPortugal() {
             <p>{t.investmentHotspotsText1}</p>
             <p>{t.investmentHotspotsText2}</p>
             <p>{t.investmentHotspotsText3}</p>
-            <p>{t.investmentHotspotsText4}</p>
+          </div>
+        </section>
+
+        {/* Section 3: The Dutch, American, and Northern European Investment Wave */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
+            {t.internationalInvestorsTitle}
+          </h2>
+          <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+            <p>{t.internationalInvestorsText1}</p>
+            <p>{t.internationalInvestorsText2}</p>
+            <p>{t.internationalInvestorsText3}</p>
+            <p>{t.internationalInvestorsText4}</p>
+            <p>{t.internationalInvestorsText5}</p>
+            <p>{t.internationalInvestorsText6}</p>
           </div>
         </section>
 
@@ -122,18 +136,6 @@ export default function WhyPortugal() {
           }}
         />
 
-        {/* Section 3: Dutch, American, Northern European Wave */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
-            {t.investorWaveTitle}
-          </h2>
-          <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.investorWaveText1}</p>
-            <p>{t.investorWaveText2}</p>
-            <p>{t.investorWaveText3}</p>
-          </div>
-        </section>
-
         {/* Section 4: Foreign Investment */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
@@ -142,6 +144,7 @@ export default function WhyPortugal() {
           <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
             <p>{t.foreignInvestmentText1}</p>
             <p>{t.foreignInvestmentText2}</p>
+            <p>{t.foreignInvestmentText3}</p>
           </div>
         </section>
 
@@ -150,9 +153,9 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.rentalYieldsTitle}
           </h2>
-          <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.rentalYieldsText}</p>
-          </div>
+          <p className="text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+            {t.rentalYieldsText}
+          </p>
         </section>
 
         {/* Section 6: Living in Portugal */}
@@ -163,16 +166,19 @@ export default function WhyPortugal() {
           <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
             <p>{t.livingInPortugalText1}</p>
             <p>{t.livingInPortugalText2}</p>
+            <p>{t.livingInPortugalText3}</p>
+            <p>{t.livingInPortugalText4}</p>
           </div>
         </section>
 
-        {/* Section 7: Cultural Assets */}
+        {/* Section 7: Cultural and Strategic Assets */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.culturalAssetsTitle}
           </h2>
           <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.culturalAssetsText}</p>
+            <p>{t.culturalAssetsText1}</p>
+            <p>{t.culturalAssetsText2}</p>
           </div>
         </section>
 
@@ -181,68 +187,101 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.taxBenefitsTitle}
           </h2>
-          <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.taxBenefitsText}</p>
-          </div>
+          <p className="text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+            {t.taxBenefitsText}
+          </p>
         </section>
 
-        {/* Section 9: Investment Thesis */}
+        {/* Section 9: The Investment Thesis */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.investmentThesisTitle}
           </h2>
           <div className="space-y-4 text-blue-50 text-lg leading-relaxed" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.investmentThesisText}</p>
+            <p>{t.investmentThesisText1}</p>
+            <p>{t.investmentThesisText2}</p>
+            <p>{t.investmentThesisText3}</p>
+            <p>{t.investmentThesisText4}</p>
           </div>
         </section>
 
-        {/* Section 10: Bridge to Investment */}
+        {/* Section 10: Your Bridge to Portuguese Property Investment */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.bridgeToInvestmentTitle}
           </h2>
-          <div className="space-y-4 text-blue-50 text-lg leading-relaxed mb-8" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
-            <p>{t.bridgeToInvestmentText}</p>
-          </div>
-          <div className="text-center">
-            <a 
-              href="/#contact" 
-              className="inline-block bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg text-lg"
-            >
-              {t.getStartedCTA}
-            </a>
-          </div>
+          <p className="text-blue-50 text-lg leading-relaxed mb-8" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+            {t.bridgeToInvestmentText}
+          </p>
         </section>
 
+        {/* Final CTA */}
+        <div className="mb-16 p-8 bg-gradient-to-r from-primary/20 to-accent/20 backdrop-blur-sm rounded-xl border border-white/10">
+          <p className="text-blue-50 text-lg leading-relaxed mb-6" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+            {t.finalCTAText}
+          </p>
+          <a 
+            href="/#contact" 
+            className="inline-block bg-accent hover:bg-accent/90 text-white font-semibold px-8 py-4 rounded-lg transition-all shadow-lg hover:shadow-xl"
+          >
+            {t.finalCTAButton}
+          </a>
+        </div>
+
         {/* Sources Section */}
-        <section className="mt-16 pt-8 border-t border-blue-400/30">
-          <h3 className="text-2xl font-bold text-white mb-4" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.8)" }}>
+        <section className="mb-16 border-t border-white/20 pt-8">
+          <h3 className="text-2xl font-bold text-white mb-4" style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8)" }}>
             {t.sourcesTitle}
           </h3>
-          <ul className="space-y-2 text-blue-50" style={{ textShadow: "1px 1px 4px rgba(0,0,0,0.7)" }}>
+          <ul className="space-y-2 text-blue-100 text-sm">
             <li>
-              <a href={t.source1Url} target="_blank" rel="noopener noreferrer" className="hover:text-white underline">
-                {t.source1Text}
+              <a 
+                href="https://www.essential-business.pt/2025/10/29/portugal-in-the-sights-of-us-investors-but-home-grown-investment-remains-thin/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline"
+              >
+                {t.source1}
               </a>
             </li>
             <li>
-              <a href={t.source2Url} target="_blank" rel="noopener noreferrer" className="hover:text-white underline">
-                {t.source2Text}
+              <a 
+                href="https://www.portugalresident.com/us-investors-flock-to-portugals-stable-market/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline"
+              >
+                {t.source2}
               </a>
             </li>
             <li>
-              <a href={t.source3Url} target="_blank" rel="noopener noreferrer" className="hover:text-white underline">
-                {t.source3Text}
+              <a 
+                href="https://www.theportugalnews.com/news/2025-05-14/escaping-to-portugal-the-rising-wave-of-american-real-estate-investment/97629" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline"
+              >
+                {t.source3}
               </a>
             </li>
             <li>
-              <a href={t.source4Url} target="_blank" rel="noopener noreferrer" className="hover:text-white underline">
-                {t.source4Text}
+              <a 
+                href="https://www.travelandtourworld.com/news/article/portugal-sees-record-us-buyer-interest-in-property-market-as-numbers-soar-and-new-flights-open-doors-to-southern-algarve/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline"
+              >
+                {t.source4}
               </a>
             </li>
             <li>
-              <a href={t.source5Url} target="_blank" rel="noopener noreferrer" className="hover:text-white underline">
-                {t.source5Text}
+              <a 
+                href="https://portugalbuyersagent.com/portugal-real-estate/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-accent transition-colors underline"
+              >
+                {t.source5}
               </a>
             </li>
           </ul>
@@ -251,19 +290,9 @@ export default function WhyPortugal() {
       </article>
 
       {/* Footer */}
-      <footer 
-        className="py-12 relative overflow-hidden border-t border-primary-foreground/20 mt-16"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.90), rgba(0, 60, 120, 0.90)), url(/ocean-view-1.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <div className="container relative z-10 text-center">
-          <p className="text-white/90">
-            © 2025 Solinvest. {t.footerRights}
-          </p>
+      <footer className="bg-black/30 py-6 mt-auto">
+        <div className="container text-center text-blue-100 text-sm">
+          <p>© {new Date().getFullYear()} Solinvest. {t.footerRights}</p>
         </div>
       </footer>
     </div>

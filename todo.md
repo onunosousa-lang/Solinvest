@@ -191,3 +191,12 @@
 - [x] Push para GitHub (commit 2961a79)
 - [x] Aguardar deploy Vercel (~30-40 segundos)
 - [x] Verificar deploy no Vercel (FOTOS VISÍVEIS! Lisboa no hero, Algarve e Silver Coast nas secções, SEM caixas brancas, texto blue-50/white)
+
+## v33 - Why Portugal: Texto COMPLETO PALAVRA POR PALAVRA (100%)
+- [x] Comparar texto atual nas traduções EN com artigo fornecido linha por linha
+- [x] Identificar TODAS as diferenças, cortes, resumos ou paráfrases (traduções EN JÁ ESTAVAM 100% completas!)
+- [x] Atualizar translations.ts EN com texto EXATO palavra por palavra do artigo (JÁ ESTAVA COMPLETO)
+- [x] Corrigir WhyPortugal.tsx para usar TODAS as traduções corretas (internationalInvestorsText1-6, livingInPortugalText3-4, culturalAssetsText2, investmentThesisText1-4, foreignInvestmentText3, finalCTAText)
+- [ ] Testar build local
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel (texto 100% completo)
