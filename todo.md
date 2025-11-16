@@ -83,4 +83,16 @@
 - [x] Atualizar sitemap.xml
 - [x] Testar localmente (build concluído com sucesso)
 - [x] Criar checkpoint v21
+- [x] Push para GitHub
+
+## v22 - Correções Why Portugal Page
+- [x] Ler conteúdo fornecido pelo utilizador (portugal_investment_article.md)
+- [ ] Pesquisar estatísticas/números online para adicionar ao conteúdo
+- [x] Corrigir gramática e uso de maiúsculas em todo o site (verificado - OK)
+- [x] Corrigir header da página Why Portugal (mesma cor da home, logo maior, sem texto "Solinvest")
+- [x] Mudar cores de fonte para match com página principal (bg-gradient-to-br from-slate-900 via-blue-900, texto blue-50/90)
+- [x] Adicionar fotos de fundo com transparência (SEO-friendly names: lisbon-portugal-real-estate-investment.jpg, algarve-portugal-property-beach.jpg, silver-coast-portugal-investment-opportunity.jpg)
+- [x] Atualizar conteúdo com texto fornecido e hyperlinks (todos os links incluídos)
+- [x] Testar localmente (build concluído com sucesso)
+- [ ] Criar checkpoint v22
 - [ ] Push para GitHub
