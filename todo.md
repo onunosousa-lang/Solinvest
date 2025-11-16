@@ -210,6 +210,7 @@
   * algarve-property-investment-portugal-beaches.jpg
   * silver-coast-real-estate-portugal-nazare.jpg
 - [x] Atualizar WhyPortugal.tsx com novos nomes de ficheiros
-- [ ] Testar build local
-- [ ] Push para GitHub
-- [ ] Verificar deploy no Vercel
+- [x] Testar build local (SUCESSO - 0 erros TypeScript)
+- [x] Push para GitHub (commit e2da3e3)
+- [x] Aguardar deploy Vercel (~30-40 segundos)
+- [x] Verificar deploy no Vercel (FOTO ALGARVE SEM WATERMARK! Nova foto 1200x800px limpa, nomes SEO-optimized aplicados)
