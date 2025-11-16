@@ -129,6 +129,9 @@ export default function Home() {
             <a href="#services" onClick={(e) => { e.preventDefault(); document.getElementById("services")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Services' : language === 'nl' ? 'Diensten' : 'Serviços'}
             </a>
+            <a href="/why-portugal" className="text-sm font-medium text-white hover:text-accent transition-colors">
+              {language === 'en' ? 'Why Portugal?' : language === 'nl' ? 'Waarom Portugal?' : 'Porquê Portugal?'}
+            </a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Contact' : language === 'nl' ? 'Contact' : 'Contato'}
             </a>

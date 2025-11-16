@@ -70,4 +70,17 @@
 - [x] Atualizar GA4 tracking code com ID real (G-PEXDMEJPJ2)
 - [x] Testar localmente (build concluído com sucesso)
 - [x] Criar checkpoint v20
+- [x] Push para GitHub
+
+## v21 - Página "Why Portugal?"
+- [x] Pesquisar mercado imobiliário português 2025-2026
+- [x] Pesquisar cultura, lifestyle e vantagens de Portugal
+- [x] Escrever conteúdo completo (EN/NL/PT)
+- [x] Criar componente WhyPortugal.tsx
+- [x] Adicionar traduções ao translations.ts
+- [x] Adicionar rota /why-portugal
+- [x] Adicionar link na navegação
+- [x] Atualizar sitemap.xml
+- [x] Testar localmente (build concluído com sucesso)
+- [ ] Criar checkpoint v21
 - [ ] Push para GitHub
