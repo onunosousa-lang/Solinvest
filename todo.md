@@ -176,5 +176,17 @@
 - [x] Adicionar menu hamburger mobile
 - [x] Remover chaves duplicadas no translations.ts
 - [x] Testar build local (SUCESSO - 0 erros TypeScript)
+- [x] Push para GitHub (commit f565705 - forced update)
+- [x] Aguardar deploy Vercel (~30-40 segundos)
+- [x] Verificar deploy no Vercel (DEPLOY CONCLUÍDO! Layout blog article, fotos AINDA NÃO VISÍVEIS, traduções NL/PT funcionando, menu mobile OK)
+
+## v32 - Why Portugal: ADICIONAR FOTOS REAIS + Remover Caixas Brancas + Cores Corretas
+- [x] Pesquisar URLs de fotos de alta qualidade de Portugal (Lisboa, Algarve, Silver Coast)
+- [x] Adicionar fotos de fundo REAIS (lisbon-portugal-cityscape.jpg, algarve-portugal-beach-cliffs.jpg, silver-coast-nazare-portugal.jpg)
+- [x] Remover TODAS as caixas brancas (bg-white) - agora texto direto sobre gradiente escuro
+- [x] Usar cores de texto do site (text-blue-50/text-white) em vez de preto
+- [x] Adicionar text-shadow para legibilidade sobre fotos
+- [x] Opacidade dos gradientes 0.20-0.30 (fotos VISÍVEIS!)
+- [ ] Testar build local
 - [ ] Push para GitHub
 - [ ] Verificar deploy no Vercel
