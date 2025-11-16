@@ -17,6 +17,7 @@ import {
   Shield
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { Menu, X } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import { toast } from "sonner";
 import { translations, type Language } from "@/translations";
@@ -52,6 +53,7 @@ function CounterCard({ value, label, desc, language }: { value: string, label: s
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>('en');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -118,7 +120,16 @@ export default function Home() {
       {/* Sticky Navigation Bar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm shadow-md" role="navigation" aria-label="Main navigation">
         <div className="container flex items-center justify-between py-3">
-          {/* Navigation Links */}
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+
+          {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-6">
             <a href="#home" onClick={(e) => { e.preventDefault(); document.getElementById("home")?.scrollIntoView({ behavior: "smooth" }); }} className="text-sm font-medium text-white hover:text-accent transition-colors">
               {language === 'en' ? 'Home' : language === 'nl' ? 'Home' : 'Início'}
@@ -136,6 +147,8 @@ export default function Home() {
               {language === 'en' ? 'Contact' : language === 'nl' ? 'Contact' : 'Contato'}
             </a>
           </div>
+
+          {/* Language Switcher */}
           <div className="flex gap-2 bg-black/30 rounded-lg p-1">
             <button
               onClick={() => setLanguage('en')}
@@ -163,6 +176,65 @@ export default function Home() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-primary border-t border-white/10">
+            <div className="container py-4 flex flex-col gap-3">
+              <a
+                href="#home"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+                  setMobileMenuOpen(false);
+                }}
+                className="text-white hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-white/10"
+              >
+                {language === 'en' ? 'Home' : language === 'nl' ? 'Home' : 'Início'}
+              </a>
+              <a
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                  setMobileMenuOpen(false);
+                }}
+                className="text-white hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-white/10"
+              >
+                {language === 'en' ? 'About' : language === 'nl' ? 'Over' : 'Sobre'}
+              </a>
+              <a
+                href="#services"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+                  setMobileMenuOpen(false);
+                }}
+                className="text-white hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-white/10"
+              >
+                {language === 'en' ? 'Services' : language === 'nl' ? 'Diensten' : 'Serviços'}
+              </a>
+              <a
+                href="/why-portugal"
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-white hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-white/10"
+              >
+                {language === 'en' ? 'Why Portugal?' : language === 'nl' ? 'Waarom Portugal?' : 'Porquê Portugal?'}
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  setMobileMenuOpen(false);
+                }}
+                className="text-white hover:text-accent transition-colors py-2 px-4 rounded-lg hover:bg-white/10"
+              >
+                {language === 'en' ? 'Contact' : language === 'nl' ? 'Contact' : 'Contato'}
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section with Large Logo */}
@@ -303,7 +375,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problem-Solving Section with Ocean View */}
+      {/* Challenges Section - We Solve Your Biggest Investment Challenges */}
       <section 
         className="py-20 relative overflow-hidden"
         style={{
@@ -315,20 +387,22 @@ export default function Home() {
       >
         <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
-            {t.solutionTitle}
+            {t.challengesTitle}
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
-              { title: t.problem1Title, desc: t.problem1Desc },
-              { title: t.problem2Title, desc: t.problem2Desc },
-              { title: t.problem3Title, desc: t.problem3Desc },
-              { title: t.problem4Title, desc: t.problem4Desc },
-            ].map((problem, index) => (
-              <div key={index} className="text-center">
-                <CheckCircle className="w-16 h-16 mx-auto mb-4 text-secondary" />
-                <h3 className="text-xl font-semibold mb-3 text-white">{problem.title}</h3>
-                <p className="text-sm text-white/90 leading-relaxed">{problem.desc}</p>
-              </div>
+              { title: t.challenge1Title, desc: t.challenge1Desc },
+              { title: t.challenge2Title, desc: t.challenge2Desc },
+              { title: t.challenge3Title, desc: t.challenge3Desc },
+              { title: t.challenge4Title, desc: t.challenge4Desc },
+            ].map((challenge, index) => (
+              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-colors">
+                <CardContent className="p-8">
+                  <CheckCircle className="w-12 h-12 mb-4 text-secondary" />
+                  <h3 className="text-2xl font-bold mb-3 text-white">{challenge.title}</h3>
+                  <p className="text-white/90 leading-relaxed">{challenge.desc}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
           <div className="text-center mt-12">
@@ -401,6 +475,27 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               {t.communityText}
             </p>
+            
+            {/* Community Benefits */}
+            <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-10 text-left">
+              {[
+                t.communityBenefit1,
+                t.communityBenefit2,
+                t.communityBenefit3,
+                t.communityBenefit4,
+                t.communityBenefit5,
+              ].map((benefit, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-foreground font-medium">{benefit}</p>
+                </div>
+              ))}
+            </div>
+            
+            <p className="text-muted-foreground mb-8 italic">
+              It's a private space built on real opportunities, real numbers, and mutual trust.
+            </p>
+            
             <WhatsAppCTA />
           </div>
         </div>

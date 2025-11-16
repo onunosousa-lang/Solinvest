@@ -137,3 +137,44 @@
 - [x] Testar localmente (build concluído)
 - [x] Push para GitHub (commit 0385e738)
 - [x] Verificar deploy no Vercel (CAIXAS AZUIS VISÍVEIS!)
+
+## v28 - Aplicar Esquema de Cores da Homepage + Traduções + Contacto
+- [x] Verificar esquema de cores da homepage (gradientes 0.88-0.95, cards bg-white/90-95)
+- [x] Aplicar EXATAMENTE o mesmo esquema de cores à página Why Portugal
+- [x] Reduzir opacidade dos gradientes para 0.88 (igual homepage)
+- [x] Adicionar secção "We Solve Your Biggest Investment Challenges" à homepage
+- [x] Adicionar beneficios à secção "Join Our Private Investor Community"
+- [x] Verificar secção de contacto (JÁ PRESENTE com números corretos)
+- [ ] Aguardar traduções NL e PT do utilizador
+- [ ] Testar localmente
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
+
+## v29 - Adicionar Menu Mobile + Completar Traduções NL/PT
+- [x] Adicionar menu hamburger mobile à homepage
+- [x] Menu deve incluir links para: About, Process, Regions, Team, Contact, Why Portugal
+- [ ] Completar traduções NL (holandês) - todas as chaves em falta
+- [ ] Completar traduções PT (português) - todas as chaves em falta
+- [ ] Testar menu mobile
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
+
+## v30 - FOTOS VISÍVEIS + Traduções Completas
+- [ ] Reduzir opacidade gradientes Why Portugal de 0.88 para 0.30-0.40 (fotos MUITO visíveis)
+- [ ] Completar TODAS as traduções NL com texto COMPLETO (não resumos)
+- [ ] Completar TODAS as traduções PT com texto COMPLETO (não resumos)
+- [ ] Testar em mobile (menu + fotos visíveis)
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
+
+## v31 - Why Portugal: FOTOS VISÍVEIS + Blog Layout + Traduções COMPLETAS
+- [x] Tornar fotos REALMENTE visíveis (opacidade 0.20-0.35)
+- [x] Corrigir hero section (padding-top ajustado para header fixo)
+- [x] Redesenhar página como BLOG ARTICLE (layout limpo, sem caixas coloridas)
+- [x] Traduzir TODO o texto Why Portugal para HOLANDÊS (NL) - COMPLETO
+- [x] Traduzir TODO o texto Why Portugal para PORTUGUÊS (PT) - COMPLETO
+- [x] Adicionar menu hamburger mobile
+- [x] Remover chaves duplicadas no translations.ts
+- [x] Testar build local (SUCESSO - 0 erros TypeScript)
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
