@@ -50,7 +50,7 @@ export default function WhyPortugal() {
       <section 
         className="relative min-h-[60vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.25), rgba(0, 60, 120, 0.30)), url(/lisbon-portugal-cityscape.jpg)",
+          backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.25), rgba(0, 60, 120, 0.30)), url(/portugal-real-estate-investment-lisbon-cityscape.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
@@ -93,7 +93,7 @@ export default function WhyPortugal() {
         <div 
           className="w-full h-96 mb-16 rounded-xl overflow-hidden shadow-2xl"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/algarve-portugal-beach-cliffs.jpg)",
+            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/algarve-property-investment-portugal-beaches.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -130,7 +130,7 @@ export default function WhyPortugal() {
         <div 
           className="w-full h-96 mb-16 rounded-xl overflow-hidden shadow-2xl"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/silver-coast-nazare-portugal.jpg)",
+            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/silver-coast-real-estate-portugal-nazare.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

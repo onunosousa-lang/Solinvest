@@ -201,3 +201,15 @@
 - [x] Push para GitHub (commit c6836d6)
 - [x] Aguardar deploy Vercel (~30-40 segundos)
 - [x] Verificar deploy no Vercel (TEXTO 100% COMPLETO! Todas as 6 secções internationalInvestors, livingInPortugal 1-4, culturalAssets 1-2, investmentThesis 1-4, foreignInvestment 1-3, finalCTA, sources - TUDO PRESENTE!)
+
+## v34 - Substituir Foto com Watermark + Renomear Fotos SEO-Optimized
+- [x] Identificar qual foto tem watermark iStock (segunda foto - Algarve)
+- [x] Procurar nova foto do Algarve sem watermark (1200x800px, sem watermark)
+- [x] Renomear fotos com nomes SEO-optimized:
+  * portugal-real-estate-investment-lisbon-cityscape.jpg
+  * algarve-property-investment-portugal-beaches.jpg
+  * silver-coast-real-estate-portugal-nazare.jpg
+- [x] Atualizar WhyPortugal.tsx com novos nomes de ficheiros
+- [ ] Testar build local
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
