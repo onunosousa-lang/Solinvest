@@ -82,5 +82,5 @@
 - [x] Adicionar link na navegação
 - [x] Atualizar sitemap.xml
 - [x] Testar localmente (build concluído com sucesso)
-- [ ] Criar checkpoint v21
+- [x] Criar checkpoint v21
 - [ ] Push para GitHub
