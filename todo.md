@@ -102,3 +102,13 @@
 - [x] Testar localmente (build concluído com sucesso)
 - [x] Push para GitHub usando gh CLI API
 - [x] Verificar deploy no Vercel (SITE ATUALIZADO COM SUCESSO!)
+
+## v24 - Corrigir Why Portugal Page (Fotos Visíveis + Texto Completo)
+- [x] Verificar se todo o texto do artigo portugal_investment_article.md está incluído
+- [x] Tornar fotos de fundo visíveis (reduzir opacidade do gradiente)
+- [x] Reduzir tamanho do hero "Why Portugal?"
+- [x] Melhorar legibilidade do texto (contraste adequado)
+- [x] Adicionar TODAS as secções em falta (Investment Hotspots, Dutch/American Investors, Rental Yields, Investment Thesis, Bridge to Investment)
+- [x] Testar localmente
+- [x] Push para GitHub
+- [x] Verificar deploy no Vercel (TODAS AS SECÇÕES PRESENTES E VISÍVEIS!)
