@@ -121,3 +121,19 @@
 - [x] Testar localmente (build concluído)
 - [x] Push para GitHub (commits d4ba41db e 129bb109)
 - [x] Verificar deploy no Vercel (TUDO CORRETO! Tom primeira pessoa, títulos originais, dados específicos, Sources, CTA correto, fotos visíveis)
+
+## v26 - Corrigir Why Portugal com Texto PALAVRA POR PALAVRA do Artigo
+- [ ] Atualizar translations.ts com fraseado EXATO do artigo (não apenas dados, mas frases completas)
+- [ ] Corrigir parágrafo de abertura para usar texto exato do artigo
+- [ ] Ajustar todas as secções para usar fraseado EXATO (não parafrasear)
+- [ ] Manter fotos visíveis (opacidade 0.45-0.56)
+- [ ] Testar localmente
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
+
+## v27 - Tornar Fotos Visíveis (Caixas Azuis Transparentes)
+- [x] Mudar cor das caixas de texto de bg-white/15 para bg-primary/15 (azul do header)
+- [x] Garantir que fotos de fundo são visíveis através das caixas
+- [x] Testar localmente (build concluído)
+- [x] Push para GitHub (commit 0385e738)
+- [x] Verificar deploy no Vercel (CAIXAS AZUIS VISÍVEIS!)

@@ -49,7 +49,7 @@ export default function WhyPortugal() {
         }}
       >
         <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <p className="text-lg text-white leading-relaxed" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
               {t.whyPortugalIntro}
             </p>
@@ -116,7 +116,7 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}>
             {t.investmentHotspotsTitle}
           </h2>
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <div className="prose prose-lg max-w-none">
               <p className="text-white leading-relaxed mb-6" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
                 {t.investmentHotspotsText1}
@@ -183,7 +183,7 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}>
             {t.foreignInvestmentTitle}
           </h2>
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <div className="prose prose-lg max-w-none">
               <p className="text-white leading-relaxed mb-6" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
                 {t.foreignInvestmentText1}
@@ -235,7 +235,7 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}>
             {t.livingInPortugalTitle}
           </h2>
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <p className="text-white leading-relaxed mb-8" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
               {t.livingInPortugalText1}
             </p>
@@ -312,7 +312,7 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}>
             {t.taxBenefitsTitle}
           </h2>
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <p className="text-white leading-relaxed" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
               {t.taxBenefitsText}
             </p>
@@ -365,7 +365,7 @@ export default function WhyPortugal() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-8" style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.7)" }}>
             {t.bridgeToInvestmentTitle}
           </h2>
-          <div className="bg-white/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
+          <div className="bg-primary/15 backdrop-blur-md p-8 rounded-xl shadow-2xl">
             <p className="text-white leading-relaxed" style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.6)" }}>
               {t.bridgeToInvestmentText}
             </p>
