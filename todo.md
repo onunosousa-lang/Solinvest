@@ -112,3 +112,12 @@
 - [x] Testar localmente
 - [x] Push para GitHub
 - [x] Verificar deploy no Vercel (TODAS AS SECÇÕES PRESENTES E VISÍVEIS!)
+
+## v25 - Substituir Conteúdo Why Portugal com Texto EXATO do Artigo Original
+- [x] Reescrever translations.ts com texto EXATO do artigo (tom primeira pessoa, títulos originais, todos os dados)
+- [x] Adicionar secção de Sources com links para as fontes
+- [x] Reescrever WhyPortugal.tsx com estrutura EXATA do artigo
+- [x] Manter fotos visíveis e design atual (apenas mudar texto)
+- [x] Testar localmente (build concluído)
+- [x] Push para GitHub (commits d4ba41db e 129bb109)
+- [x] Verificar deploy no Vercel (TUDO CORRETO! Tom primeira pessoa, títulos originais, dados específicos, Sources, CTA correto, fotos visíveis)
