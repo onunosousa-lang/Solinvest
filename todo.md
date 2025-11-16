@@ -94,5 +94,11 @@
 - [x] Adicionar fotos de fundo com transparência (SEO-friendly names: lisbon-portugal-real-estate-investment.jpg, algarve-portugal-property-beach.jpg, silver-coast-portugal-investment-opportunity.jpg)
 - [x] Atualizar conteúdo com texto fornecido e hyperlinks (todos os links incluídos)
 - [x] Testar localmente (build concluído com sucesso)
-- [ ] Criar checkpoint v22
+- [x] Criar checkpoint v22
 - [ ] Push para GitHub
+
+## v23 - Corrigir Why Portugal Page Design (Bug Fix)
+- [x] Implementar design correto no WhyPortugal.tsx (gradiente escuro, fotos de fundo, cores azul-50/90)
+- [x] Testar localmente (build concluído com sucesso)
+- [x] Push para GitHub usando gh CLI API
+- [x] Verificar deploy no Vercel (SITE ATUALIZADO COM SUCESSO!)
