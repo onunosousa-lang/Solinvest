@@ -220,6 +220,7 @@
 - [x] Substituir a foto CORRETA com watermark (nova foto 1600x900px sem watermark)
 - [x] Completar TODAS as traduções NL (holandês) da homepage - 48 chaves adicionadas (challengesTitle, challenge1-4, communityTitle/Subtitle/Text/Benefit1-5/CTA)
 - [x] Completar TODAS as traduções PT (português) da homepage - 48 chaves adicionadas (challengesTitle, challenge1-4, communityTitle/Subtitle/Text/Benefit1-5/CTA)
-- [ ] Testar build local
-- [ ] Push para GitHub
-- [ ] Verificar deploy no Vercel
+- [x] Testar build local (SUCESSO - warnings sobre chunk size mas 0 erros TypeScript)
+- [x] Push para GitHub (commit 3019d86)
+- [x] Aguardar deploy Vercel (~30-40 segundos)
+- [x] Verificar deploy no Vercel (DEPLOY CONCLUÍDO! Homepage SEM watermark Shutterstock, traduções NL/PT completas funcionando)
