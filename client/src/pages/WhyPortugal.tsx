@@ -16,7 +16,7 @@ export default function WhyPortugal() {
       "image": [
         "https://www.solinvest.net/portugal-real-estate-investment-lisbon-cityscape.jpg",
         "https://www.solinvest.net/algarve-property-investment-portugal-beaches.jpg",
-        "https://www.solinvest.net/silver-coast-real-estate-portugal-nazare-new.jpg"
+        "https://www.solinvest.net/silver-coast-real-estate-portugal-nazare.jpg"
       ],
       "author": {
         "@type": "Organization",
@@ -175,7 +175,7 @@ export default function WhyPortugal() {
         <div 
           className="w-full h-96 mb-16 rounded-xl overflow-hidden shadow-2xl"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/silver-coast-real-estate-portugal-nazare-new.jpg)",
+            backgroundImage: "linear-gradient(rgba(0, 40, 80, 0.20), rgba(0, 60, 120, 0.25)), url(/silver-coast-real-estate-portugal-nazare.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

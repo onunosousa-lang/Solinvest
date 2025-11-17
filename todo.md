@@ -245,5 +245,10 @@
 - [x] Gerada imagem substituta com IA de Nazaré/Silver Coast (silver-coast-real-estate-portugal-nazare-new.jpg)
 - [x] Substituir referências no WhyPortugal.tsx (2 ocorrências: schema JSON-LD + backgroundImage)
 - [x] Testar build local (SUCESSO - 0 erros TypeScript, build completo em 3.84s)
-- [ ] Criar checkpoint v37
-- [ ] Verificar deploy
+- [x] Criar checkpoint v37 (versão 21ac1e00)
+- [x] Verificar deploy no Vercel (PROBLEMA: imagem antiga ainda visível - cache ou nome diferente)
+- [x] CORREÇÃO: Renomear imagem nova para nome original (remover -new do filename)
+- [x] Reverter referências no código para nome original
+- [x] Testar build final (SUCESSO - 3.81s)
+- [ ] Criar checkpoint v37 final
+- [ ] Verificar deploy final
