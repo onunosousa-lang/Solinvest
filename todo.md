@@ -234,4 +234,8 @@
 - [x] Testar build local (SUCESSO - warnings sobre chunk size e @import, mas 0 erros TypeScript)
 - [x] Commit local (a216f67)
 - [x] Criar checkpoint v36 (sincroniza automaticamente com Vercel)
-- [ ] Verificar deploy no Vercel
+- [x] Verificar deploy no Vercel (DEPLOY CONCLUÍDO!)
+- [x] Adicionar schema Article também ao index.html (além do useEffect) para melhor SEO
+- [x] Testar build final (SUCESSO - 0 erros TypeScript, index.html agora 373.58 kB com schema markup)
+- [ ] Criar checkpoint v36 final
+- [ ] Verificar schema markup no HTML renderizado
