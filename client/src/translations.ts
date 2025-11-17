@@ -241,6 +241,28 @@ export const translations: Record<Language, Record<string, string>> = {
     footerContact: "Contact",
     footerRights: "Alle rechten voorbehouden.",
     
+    // Challenges Section
+    challengesTitle: "We Lossen Uw Grootste Investeringsuitdagingen Op",
+    challenge1Title: "Toegang tot Off-Market Kansen",
+    challenge1Desc: "Kom er als eerste bij. Ons lokale netwerk geeft u exclusieve toegang tot veelbelovende eigendommen voordat ze op de open markt komen.",
+    challenge2Title: "Navigeer Complex Regelgeving met Gemak",
+    challenge2Desc: "Geen bureaucratische hoofdpijn. Onze Portugese partnerships regelen vergunningen, belastingen en juridische complexiteiten zodat u dat niet hoeft te doen.",
+    challenge3Title: "Maximaliseer Uw Rendementen",
+    challenge3Desc: "Slimme waardecreatie. Strategische renovaties en ontwikkelingsexpertise transformeren goede eigendommen in uitzonderlijke investeringen.",
+    challenge4Title: "Echte End-to-End Beheer",
+    challenge4Desc: "Uw tijd is waardevol. Van eerste sourcing tot definitieve verkoop, wij beheren elk detail terwijl we u geïnformeerd houden.",
+    
+    // Private Investor Community Section
+    communityTitle: "Sluit Aan Bij Onze Privé Investeerderscommunity",
+    communitySubtitle: "Exclusieve Toegang tot Onze Beste Kansen",
+    communityText: "Solinvest is meer dan een investeringsplatform—het is een vertrouwd partnerschap. Onze privé WhatsApp investeerdersgroep geeft u directe toegang tot nieuwe eigendomsontdekkingen, projectupdates en gedetailleerde ROI-analyse.",
+    communityBenefit1: "Eerste blik op off-market kansen",
+    communityBenefit2: "Real-time projectupdates en inzichten",
+    communityBenefit3: "Directe communicatie met oprichters",
+    communityBenefit4: "Transparante financiën en eerlijke beoordelingen",
+    communityBenefit5: "Maak gebruik van onze lokale connecties om valkuilen te vermijden",
+    communityCTA: "Sluit Aan Bij Onze Privé Investeerdersgroep",
+    
     // Why Portugal Page - Complete Dutch translations
     backToHome: "Terug naar Home",
     whyPortugalTitle: "Waarom Portugal? De Europese Vastgoedinvesteringsmogelijkheid die Nederlandse en Amerikaanse Investeerders Ontdekken",
@@ -326,6 +348,28 @@ export const translations: Record<Language, Record<string, string>> = {
     christianName: "Christiaan Ticheler",
     christianRole: "Estratégia Imobiliária & Finanças",
     christianDesc: "Christiaan traz mais de 15 anos de experiência em investimento imobiliário institucional. A sua carreira abrange gestão de portfólio em grandes fundos de pensões holandeses, onde geriu €650 milhões em alocações imobiliárias globais. Como Gestor de Ativos interino na Arcona Capital, liderou a due diligence completa do portfólio para refinanciamento de private equity. Desde 2016, opera a Ticheler Taxatie (avaliações imobiliárias) e co-fundou a GroenVast Bouw (construção modular). As suas competências analíticas e extensa rede fazem dele a espinha dorsal financeira estratégica da Solinvest.",
+    
+    // Challenges Section
+    challengesTitle: "Resolvemos os Seus Maiores Desafios de Investimento",
+    challenge1Title: "Acesso a Oportunidades Fora do Mercado",
+    challenge1Desc: "Chegue primeiro. A nossa rede local dá-lhe acesso exclusivo a propriedades de alto potencial antes de chegarem ao mercado aberto.",
+    challenge2Title: "Navegue Regulamentações Complexas com Facilidade",
+    challenge2Desc: "Sem dores de cabeça burocráticas. As nossas parcerias portuguesas tratam de licenças, impostos e complexidades legais para que não tenha de o fazer.",
+    challenge3Title: "Maximize os Seus Retornos",
+    challenge3Desc: "Criação inteligente de valor. Renovações estratégicas e expertise em desenvolvimento transformam boas propriedades em investimentos excecionais.",
+    challenge4Title: "Verdadeira Gestão End-to-End",
+    challenge4Desc: "O seu tempo é valioso. Desde a pesquisa inicial até à venda final, gerimos todos os detalhes mantendo-o informado.",
+    
+    // Private Investor Community Section
+    communityTitle: "Junte-se à Nossa Comunidade Privada de Investidores",
+    communitySubtitle: "Acesso Exclusivo às Nossas Melhores Oportunidades",
+    communityText: "A Solinvest é mais do que uma plataforma de investimento—é uma parceria de confiança. O nosso grupo privado de investidores no WhatsApp dá-lhe acesso direto a novas descobertas de propriedades, atualizações de projetos e análise detalhada de ROI.",
+    communityBenefit1: "Primeira vista de oportunidades fora do mercado",
+    communityBenefit2: "Atualizações e insights de projetos em tempo real",
+    communityBenefit3: "Comunicação direta com os fundadores",
+    communityBenefit4: "Finanças transparentes e avaliações honestas",
+    communityBenefit5: "Aproveite as nossas conexões locais para evitar armadilhas",
+    communityCTA: "Junte-se ao Nosso Grupo Privado de Investidores",
     
     // Why Portugal Page - Complete Portuguese translations
     backToHome: "Voltar ao Início",

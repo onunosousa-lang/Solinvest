@@ -214,3 +214,12 @@
 - [x] Push para GitHub (commit e2da3e3)
 - [x] Aguardar deploy Vercel (~30-40 segundos)
 - [x] Verificar deploy no Vercel (FOTO ALGARVE SEM WATERMARK! Nova foto 1200x800px limpa, nomes SEO-optimized aplicados)
+
+## v35 - Substituir Foto iStock CORRETA + Completar Traduções NL/PT Homepage
+- [x] Identificar QUAL foto ainda tem watermark iStock (lisbon-portugal-real-estate-investment.jpg tinha Shutterstock watermark)
+- [x] Substituir a foto CORRETA com watermark (nova foto 1600x900px sem watermark)
+- [x] Completar TODAS as traduções NL (holandês) da homepage - 48 chaves adicionadas (challengesTitle, challenge1-4, communityTitle/Subtitle/Text/Benefit1-5/CTA)
+- [x] Completar TODAS as traduções PT (português) da homepage - 48 chaves adicionadas (challengesTitle, challenge1-4, communityTitle/Subtitle/Text/Benefit1-5/CTA)
+- [ ] Testar build local
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel
