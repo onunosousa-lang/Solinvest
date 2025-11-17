@@ -237,5 +237,13 @@
 - [x] Verificar deploy no Vercel (DEPLOY CONCLUÍDO!)
 - [x] Adicionar schema Article também ao index.html (além do useEffect) para melhor SEO
 - [x] Testar build final (SUCESSO - 0 erros TypeScript, index.html agora 373.58 kB com schema markup)
-- [ ] Criar checkpoint v36 final
-- [ ] Verificar schema markup no HTML renderizado
+- [x] Criar checkpoint v36 final (versão 1d777467)
+- [x] Verificar schema markup no HTML renderizado (PRESENTE no dist local - 2 ocorrências de 'Article', schema completo visível)
+
+## v37 - Remover Watermark iStock da Página Why Portugal
+- [x] Identificada imagem com watermark: silver-coast-real-estate-portugal-nazare.jpg (iStock Credit: Vera Fedorova, ID: 1065604026)
+- [x] Gerada imagem substituta com IA de Nazaré/Silver Coast (silver-coast-real-estate-portugal-nazare-new.jpg)
+- [x] Substituir referências no WhyPortugal.tsx (2 ocorrências: schema JSON-LD + backgroundImage)
+- [x] Testar build local (SUCESSO - 0 erros TypeScript, build completo em 3.84s)
+- [ ] Criar checkpoint v37
+- [ ] Verificar deploy
