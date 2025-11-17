@@ -224,3 +224,13 @@
 - [x] Push para GitHub (commit 3019d86)
 - [x] Aguardar deploy Vercel (~30-40 segundos)
 - [x] Verificar deploy no Vercel (DEPLOY CONCLUÍDO! Homepage SEM watermark Shutterstock, traduções NL/PT completas funcionando)
+
+## v36 - SEO Improvements: Alt Text + Schema Markup
+- [x] Analisar todas as imagens em Home.tsx
+- [x] Adicionar aria-labels descritivos em todas as secções da homepage (hero, stats, about, services, challenges, regions, community, team, contact, footer)
+- [x] Analisar todas as imagens em WhyPortugal.tsx  
+- [x] Adicionar alt text descritivo ao logo WhyPortugal
+- [x] Implementar schema markup JSON-LD Article para página Why Portugal (headline, author, datePublished, image, publisher, keywords)
+- [x] Testar build local (SUCESSO - warnings sobre chunk size e @import, mas 0 erros TypeScript)
+- [ ] Push para GitHub
+- [ ] Verificar deploy no Vercel

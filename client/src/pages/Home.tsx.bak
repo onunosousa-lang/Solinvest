@@ -245,6 +245,8 @@ export default function Home() {
             backgroundImage: "url(/hero-villa.jpg)",
             filter: "brightness(0.35)",
           }}
+          role="img"
+          aria-label="Modern luxury villa in Portugal with contemporary architecture and ocean views"
         />
         <div className="relative z-10 container text-center text-white px-6">
           {/* Large Logo Above Title - 2x Bigger */}
@@ -268,15 +270,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section with Ocean Background */}
-      <section id="stats" 
+          {/* Problem-Solving Section with Ocean View */}
+      <section 
         className="py-20 relative overflow-hidden"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.92), rgba(0, 60, 120, 0.92)), url(/ocean-view-2.jpg)",
+          backgroundImage: "linear-gradient(rgba(0, 60, 120, 0.88), rgba(0, 60, 120, 0.88)), url(/ocean-view-4.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Investment challenges solutions with Portuguese ocean panorama"
+      >    aria-label="Portuguese real estate investment statistics with Atlantic Ocean background"
       >
         <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
@@ -313,6 +317,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="About Solinvest with Portuguese coastal scenery"
       >
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -348,6 +353,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Property development process with Portuguese Atlantic coastline"
       >
         <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
@@ -420,6 +426,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Portuguese investment regions with Atlantic Ocean backdrop"
       >
         <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
@@ -462,6 +469,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Private investor community with Portuguese coastal views"
       >
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -510,6 +518,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Solinvest leadership team with Portuguese ocean scenery"
       >
         <div className="container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
@@ -583,6 +592,7 @@ export default function Home() {
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
+        aria-label="Contact Solinvest with Portuguese Atlantic coastline"
       >
         <div className="container relative z-10">
           <div className="max-w-2xl mx-auto">
@@ -700,10 +710,11 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        aria-label="Footer with Portuguese ocean background"
       >
         <div className="container relative z-10">
           <div className="text-center mb-8">
-            <img src={APP_LOGO} alt="Solinvest Logo" className="h-16 mx-auto mb-6 drop-shadow-xl" loading="lazy" />
+            <img src={APP_LOGO} alt="Solinvest - Portuguese Real Estate Investment & Property Development Logo" className="h-16 mx-auto mb-6 drop-shadow-xl" loading="lazy" />
             
             {/* KVK and Insurance Information */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6 text-white">

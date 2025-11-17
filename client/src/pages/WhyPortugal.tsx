@@ -1,10 +1,55 @@
 import { APP_LOGO } from "@/const";
 import { translations, type Language } from "@/translations";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function WhyPortugal() {
   const [language, setLanguage] = useState<Language>('en');
   const t = translations[language];
+
+  // Add JSON-LD schema markup for SEO
+  useEffect(() => {
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Portugal? The Ultimate Real Estate Investment Destination for 2025-2026",
+      "description": "Comprehensive analysis of Portugal's real estate market: investment opportunities, rental yields, quality of life, and why international investors are choosing Portuguese property.",
+      "image": [
+        "https://www.solinvest.net/portugal-real-estate-investment-lisbon-cityscape.jpg",
+        "https://www.solinvest.net/algarve-property-investment-portugal-beaches.jpg",
+        "https://www.solinvest.net/silver-coast-real-estate-portugal-nazare.jpg"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Solinvest",
+        "url": "https://www.solinvest.net"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Solinvest",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.solinvest.net/logo.png"
+        }
+      },
+      "datePublished": "2025-01-15",
+      "dateModified": "2025-01-15",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.solinvest.net/why-portugal"
+      },
+      "articleSection": "Real Estate Investment",
+      "keywords": "Portugal real estate, Portuguese property investment, Lisbon real estate, Algarve property, Silver Coast, rental yields Portugal, international investment Portugal, Dutch investors Portugal, American investors Portugal"
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-900 via-blue-900 to-slate-900">
