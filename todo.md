@@ -232,5 +232,6 @@
 - [x] Adicionar alt text descritivo ao logo WhyPortugal
 - [x] Implementar schema markup JSON-LD Article para página Why Portugal (headline, author, datePublished, image, publisher, keywords)
 - [x] Testar build local (SUCESSO - warnings sobre chunk size e @import, mas 0 erros TypeScript)
-- [ ] Push para GitHub
+- [x] Commit local (a216f67)
+- [x] Criar checkpoint v36 (sincroniza automaticamente com Vercel)
 - [ ] Verificar deploy no Vercel
