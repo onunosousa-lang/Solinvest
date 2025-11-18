@@ -21,6 +21,7 @@ import { Menu, X } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import { toast } from "sonner";
 import { translations, type Language } from "@/translations";
+import InvestorForm from "@/components/InvestorForm";
 
 
 function CounterCard({ value, label, desc, language }: { value: string, label: string, desc: string, language: Language }) {
@@ -54,6 +55,7 @@ function CounterCard({ value, label, desc, language }: { value: string, label: s
 export default function Home() {
   const [language, setLanguage] = useState<Language>('en');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [investorFormOpen, setInvestorFormOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -104,14 +106,12 @@ export default function Home() {
 
   const WhatsAppCTA = ({ className = "" }: { className?: string }) => (
     <Button
-      asChild
       size="lg"
+      onClick={() => setInvestorFormOpen(true)}
       className={`bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6 shadow-lg ${className}`}
     >
-      <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-        <MessageCircle className="mr-2 h-5 w-5" />
-        {t.heroCTA}
-      </a>
+      <MessageCircle className="mr-2 h-5 w-5" />
+      {t.heroCTA}
     </Button>
   );
 
@@ -723,6 +723,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Investor Form Modal */}
+      <InvestorForm open={investorFormOpen} onOpenChange={setInvestorFormOpen} />
     </div>
   );
 }

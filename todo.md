@@ -250,5 +250,23 @@
 - [x] CORREÇÃO: Renomear imagem nova para nome original (remover -new do filename)
 - [x] Reverter referências no código para nome original
 - [x] Testar build final (SUCESSO - 3.81s)
-- [ ] Criar checkpoint v37 final
-- [ ] Verificar deploy final
+- [x] Criar checkpoint v37 final (versão a49a8b4c)
+- [x] Aguardar e verificar deploy final no Vercel
+- [x] PROBLEMA CONFIRMADO: Imagem antiga com watermark iStock AINDA VISÍVEL no site (cache CDN Vercel muito agressivo)
+- [ ] SOLUÇÃO: Limpar cache CDN do Vercel ou aguardar expiração automática (pode demorar até 24h)
+
+## v38 - Formulário Investidor + Sitemap + Lazy Loading
+- [x] Criar componente InvestorForm.tsx com 12 perguntas (multi-step form)
+- [x] Implementar lógica de navegação entre screens (1-15)
+- [x] Adicionar validação de campos obrigatórios
+- [x] Criar endpoint API /api/investor-form para envio de email
+- [x] Configurar envio para onunosousa@gmail.com e info@solinvest.net
+- [x] Implementar redirecionamento automático para WhatsApp após submissão
+- [x] Integrar modal no botão "Join Our Private Investor Group"
+- [x] Atualizar sitemap.xml com lastmod 2025-11-18 (já existia)
+- [x] Verificar lazy loading (imagens CSS background têm lazy loading nativo do browser, nenhuma tag <img> encontrada)
+- [x] Criar teste vitest para endpoint /api/investor-form
+- [x] Testar build (SUCESSO - 8.23s, 0 erros TypeScript)
+- [x] Verificar status do projeto (lsp: No errors, typescript: No errors)
+- [ ] Criar checkpoint v38
+- [ ] Verificar deploy
