@@ -268,5 +268,13 @@
 - [x] Criar teste vitest para endpoint /api/investor-form
 - [x] Testar build (SUCESSO - 8.23s, 0 erros TypeScript)
 - [x] Verificar status do projeto (lsp: No errors, typescript: No errors)
-- [ ] Criar checkpoint v38
-- [ ] Verificar deploy
+- [x] Criar checkpoint v38 (versão b7026e02)
+- [ ] Aguardar deploy Vercel e testar formulário em produção
+
+## v38.1 - Corrigir Formulário (Bug Fix)
+- [x] BUG RESOLVIDO: Servidor não estava a correr (faltava server/_core/index.ts + vite-express)
+- [x] Criado server/_core/index.ts com ViteExpress
+- [x] Instalado vite-express (0.21.1)
+- [x] Testado abertura do modal - FUNCIONA PERFEITAMENTE em todos os 9 botões
+- [x] Testado navegação entre screens - Question 1 of 12 exibida correctamente
+- [ ] Criar checkpoint v38.1
