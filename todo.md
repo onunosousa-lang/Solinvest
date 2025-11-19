@@ -277,4 +277,28 @@
 - [x] Instalado vite-express (0.21.1)
 - [x] Testado abertura do modal - FUNCIONA PERFEITAMENTE em todos os 9 botões
 - [x] Testado navegação entre screens - Question 1 of 12 exibida correctamente
-- [ ] Criar checkpoint v38.1
+- [x] Criar checkpoint v38.1 (versão 8fe4f472)
+- [x] Preview URL disponível: https://3000-idzch83ohz014bnkmjl3o-f82f17e4.manusvm.computer
+
+## v38.2 - Deploy para Produção
+- [x] Verificado: Commits 8fe4f47 (v38.1) estavam no S3 da Manus, NÃO no GitHub
+- [x] CAUSA IDENTIFICADA: Git tinha 2 remotes (origin=S3, github=GitHub)
+- [x] SOLUÇÃO: Feito push para remote 'github' (58 objetos, 364 KB)
+- [x] Aguardado deploy Vercel (3 minutos)
+- [x] SUCESSO: Botões agora são <button> em vez de <a>
+- [x] TESTADO: Formulário abre correctamente em produção (www.solinvest.net)
+
+## v39 - Melhorias Formulário Investidor
+- [x] Q1: "Develop & exit" → mudado de 3-5 anos para 1-3 anos
+- [x] Q5: Mudadas opções para 2, 5, 10, 15+ anos (era 5, 7, 10, 15+)
+- [x] Q7: Adicionada opção "Turnkey development for sale"
+- [x] Q10: Removido completamente (Professional resource)
+- [x] Reorganizada numeração: Q11→Q10, Q12→Q11, Q13-16→Q10-11+Contact (12→11 perguntas)
+- [x] UI: Checkbox border mudado de border para border-2 (mais visível)
+- [x] Fluxo de submissão: Já estava correcto (POST /api/investor-form → screen 14 → WhatsApp)
+- [x] Email template: Removida referência a Q10 Professional Resource
+- [ ] Tradução NL: Adiada para v40 (requer refactor completo do componente)
+- [x] Testar formulário em localhost (Q1 1-3 anos ✓, checkboxes visíveis ✓, navegação OK ✓)
+- [x] Build testado (SUCESSO - 5.47s, 0 erros TypeScript)
+- [ ] Criar checkpoint v39
+- [ ] Push para GitHub e deploy

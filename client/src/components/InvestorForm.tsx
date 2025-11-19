@@ -48,8 +48,7 @@ interface FormData {
   // Q9 - Governance safeguards
   governanceSafeguards: string;
   
-  // Q10 - Professional resource
-  professionalResource: string;
+
   
   // Q11 - Visualization 1
   visualization1: string;
@@ -83,7 +82,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
     productTypes: [],
     disqualifyingIssue: "",
     governanceSafeguards: "",
-    professionalResource: "",
+
     visualization1: "",
     visualization2: "",
     fullName: "",
@@ -181,24 +180,18 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
         }
         break;
       case 11:
-        if (!formData.professionalResource.trim()) {
-          toast.error("Please describe your professional resource");
+        if (!formData.visualization1.trim()) {
+          toast.error("Please describe your future vision");
           return false;
         }
         break;
       case 12:
-        if (!formData.visualization1.trim()) {
-          toast.error("Please complete the visualization");
-          return false;
-        }
-        break;
-      case 13:
         if (!formData.visualization2.trim()) {
           toast.error("Please describe your decision trigger");
           return false;
         }
         break;
-      case 14:
+      case 13:
         if (!formData.fullName.trim()) {
           toast.error("Please enter your full name");
           return false;
@@ -227,7 +220,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
   };
 
   const handleSubmit = async () => {
-    if (!validateScreen(14)) return;
+    if (!validateScreen(13)) return;
 
     setIsSubmitting(true);
     try {
@@ -240,7 +233,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
       if (!response.ok) throw new Error("Failed to submit form");
 
       toast.success("Profile submitted successfully!");
-      setCurrentScreen(15);
+      setCurrentScreen(14);
       
       // Redirect to WhatsApp after 2 seconds
       setTimeout(() => {
@@ -259,7 +252,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
           productTypes: [],
           disqualifyingIssue: "",
           governanceSafeguards: "",
-          professionalResource: "",
+      
           visualization1: "",
           visualization2: "",
           fullName: "",
@@ -302,7 +295,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
             </div>
             <div className="space-y-3">
               {[
-                "Develop & exit – value-add construction, sell within 3-5 years",
+                "Develop & exit – value-add construction, sell within 1-3 years",
                 "Long-term rental – steady 5-7% net yield, hands-off",
                 "Tourism asset – boutique hotel, AL-licensed villas, glamping",
                 "Holiday / second home – personal use + occasional letting",
@@ -413,10 +406,10 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
             <h3 className="text-lg font-semibold">Q5. Minimum holding period I model before reassessment</h3>
             <RadioGroup value={formData.timeHorizon} onValueChange={(value) => setFormData(prev => ({ ...prev, timeHorizon: value }))}>
               {[
+                "2 years",
                 "5 years",
-                "7 years",
                 "10 years",
-                "15 years+",
+                "15+ years",
                 "Indefinite – I rarely sell",
               ].map((option) => (
                 <div key={option} className="flex items-center space-x-2">
@@ -464,6 +457,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
                 "Short-term rental licensed unit (AL)",
                 "Boutique hotel / guest-house ≤ 20 keys",
                 "Rural tourism quinta",
+                "Turnkey development for sale",
                 "Off-plan turnkey with rental guarantee",
                 "Development land – I control construction",
                 "Portfolio diversification – multi-segment",
@@ -516,22 +510,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
       case 11:
         return (
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Q10. Which professional resource or skill can you contribute to group diligence?</h3>
-            <Textarea
-              placeholder="Corporate-finance modelling & debt arranging."
-              value={formData.professionalResource}
-              onChange={(e) => setFormData(prev => ({ ...prev, professionalResource: e.target.value }))}
-              maxLength={250}
-              rows={4}
-            />
-            <p className="text-xs text-muted-foreground text-right">{formData.professionalResource.length}/250</p>
-          </div>
-        );
-
-      case 12:
-        return (
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Q11. Future-pace: It is five years from today and you are standing inside your Portuguese asset. Describe one sensory detail (sight, sound, scent) that confirms you chose wisely.</h3>
+            <h3 className="text-lg font-semibold">Q10. Future-pace: It is five years from today and you are standing inside your Portuguese asset. Describe one sensory detail (sight, sound, scent) that confirms you chose wisely.</h3>
             <Textarea
               placeholder="Late-afternoon Atlantic light across the limestone floor…"
               value={formData.visualization1}
@@ -543,10 +522,10 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
           </div>
         );
 
-      case 13:
+      case 12:
         return (
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Q12. Decision trigger: Give us the exact line in a deal teaser that would make you request the full data-room immediately.</h3>
+            <h3 className="text-lg font-semibold">Q11. Decision trigger: Give us the exact line in a deal teaser that would make you request the full data-room immediately.</h3>
             <Textarea
               placeholder="Net yield 5.8% at 65% LTV, 14-month construction timeline, fixed-rate debt covered 1.4×."
               value={formData.visualization2}
@@ -558,13 +537,13 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
           </div>
         );
 
-      case 14:
+      case 13:
         return (
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">Contact & Declarations</h3>
             
             <div className="space-y-2">
-              <Label htmlFor="fullName">Q13. First & last name *</Label>
+              <Label htmlFor="fullName">Q10. First & last name *</Label>
               <Input
                 id="fullName"
                 value={formData.fullName}
@@ -574,7 +553,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="whatsappNumber">Q14. WhatsApp number (international format) *</Label>
+              <Label htmlFor="whatsappNumber">Q11. WhatsApp number (international format) *</Label>
               <Input
                 id="whatsappNumber"
                 value={formData.whatsappNumber}
@@ -584,7 +563,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email">Q15. Email (optional back-up)</Label>
+              <Label htmlFor="email">Email (optional back-up)</Label>
               <Input
                 id="email"
                 type="email"
@@ -595,7 +574,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
             </div>
 
             <div className="space-y-3 pt-4">
-              <Label>Q16. Declarations (minimum 2 required) *</Label>
+              <Label>Declarations (minimum 2 required) *</Label>
               {[
                 "I conduct due-diligence before investing",
                 "I will share red-flag findings promptly",
@@ -617,7 +596,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
           </div>
         );
 
-      case 15:
+      case 14:
         return (
           <div className="space-y-6 text-center">
             <div>
@@ -649,7 +628,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>
-            {currentScreen === 1 ? "Welcome" : currentScreen === 15 ? "Thank You!" : `Question ${currentScreen - 1} of 12`}
+            {currentScreen === 1 ? "Welcome" : currentScreen === 14 ? "Thank You!" : `Question ${currentScreen - 1} of 11`}
           </DialogTitle>
         </DialogHeader>
 
@@ -657,7 +636,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
           {renderScreen()}
         </div>
 
-        {currentScreen > 1 && currentScreen < 15 && (
+        {currentScreen > 1 && currentScreen < 14 && (
           <div className="flex gap-3 pt-4 border-t">
             <Button
               variant="outline"

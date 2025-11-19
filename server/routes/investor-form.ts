@@ -52,13 +52,10 @@ ${formData.productTypes.map((type: string) => `<li>${type}</li>`).join("")}
 <h3>Q9. Governance Safeguards</h3>
 <p>${formData.governanceSafeguards}</p>
 
-<h3>Q10. Professional Resource</h3>
-<p>${formData.professionalResource}</p>
-
-<h3>Q11. Visualization (5 years)</h3>
+<h3>Q10. Visualization (5 years)</h3>
 <p>${formData.visualization1}</p>
 
-<h3>Q12. Decision Trigger</h3>
+<h3>Q11. Decision Trigger</h3>
 <p>${formData.visualization2}</p>
 
 <h3>Declarations Accepted</h3>
