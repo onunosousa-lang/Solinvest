@@ -6,12 +6,14 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import WhyPortugal from "./pages/WhyPortugal";
+import Join from "./pages/Join";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path="/why-portugal" component={WhyPortugal} />
+      <Route path="/join" component={Join} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

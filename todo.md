@@ -321,6 +321,18 @@
 - [x] Build testado (SUCESSO - 4.53s, 0 erros TypeScript)
 - [x] Testar formulário em localhost EN (FUNCIONA - títulos em inglês)
 - [x] Sistema de tradução implementado (useLanguage hook + translations file)
-- [ ] Criar checkpoint v40
+- [x] Criar checkpoint v40 (versão d45f525e)
+- [x] Push para GitHub (aae25bf..d45f525)
+- [ ] Aguardar deploy Vercel (~3 minutos)
+- [ ] Testar formulário NL em produção
+
+## v41 - Link Directo Formulário + Why Portugal NL
+- [x] Criar rota /join que abre automaticamente o formulário
+- [x] Configurar redirecionamento para WhatsApp (já existe no InvestorForm)
+- [x] Traduzir página Why Portugal completa para holandês (JÁ EXISTE em translations.ts)
+- [x] Adicionar detecção de idioma na página Why Portugal (JÁ IMPLEMENTADO)
+- [x] Build testado (SUCESSO - 5.38s, 0 erros TypeScript)
+- [x] Link /join criado (abre formulário automaticamente)
+- [x] Why Portugal NL já funcional (traduções completas)
+- [ ] Criar checkpoint v41
 - [ ] Push para GitHub e deploy
-- [ ] Testar NL em produção após deploy
