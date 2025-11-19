@@ -299,14 +299,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
               <p className="text-sm text-muted-foreground mb-4">(Choose any)</p>
             </div>
             <div className="space-y-3">
-              {[
-                "Develop & exit – value-add construction, sell within 1-3 years",
-                "Long-term rental – steady 5-7% net yield, hands-off",
-                "Tourism asset – boutique hotel, AL-licensed villas, glamping",
-                "Holiday / second home – personal use + occasional letting",
-                "Bed-and-breakfast / guest-house – owner-operator or managed",
-                "Passive land-bank – secure permits, sell to operator later",
-              ].map((goal) => (
+              {t.questions.q1.options.slice(0, -2).map((goal) => (
                 <div key={goal} className="flex items-start space-x-2">
                   <Checkbox
                     id={goal}

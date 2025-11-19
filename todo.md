@@ -334,5 +334,15 @@
 - [x] Build testado (SUCESSO - 5.38s, 0 erros TypeScript)
 - [x] Link /join criado (abre formulário automaticamente)
 - [x] Why Portugal NL já funcional (traduções completas)
-- [ ] Criar checkpoint v41
+- [x] Criar checkpoint v41 (versão 232d6399)
+- [x] Push para GitHub (d45f525..232d639)
+- [x] Deploy Vercel em progresso (~3 minutos)
+
+## v42 - Traduzir Opções do Formulário para Holandês
+- [x] Actualizar investorFormTranslations.ts com todas as opções traduzidas (JÁ COMPLETO - Q1-Q11)
+- [x] Refactor InvestorForm.tsx para usar t.questions.qX.options (script Python - todas as 11 perguntas)
+- [x] Build testado (SUCESSO - 4.03s, 0 erros TypeScript)
+- [x] Testar formulário localhost (opções carregam de t.questions.qX.options ✓)
+- [x] Sistema de tradução funcional (EN por padrão, NL quando localStorage='nl')
+- [ ] Criar checkpoint v42
 - [ ] Push para GitHub e deploy
