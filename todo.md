@@ -309,5 +309,18 @@
 - [x] BUG: Checkboxes quase invisíveis (border cinzento claro)
 - [x] Mudar border-input para border-slate-400 (light) e border-slate-500 (dark)
 - [x] Testar visibilidade em localhost (MUITO MELHOR - checkboxes claramente visíveis!)
-- [ ] Criar checkpoint v39.1
+- [x] Criar checkpoint v39.1 (versão aae25bf6)
+- [x] Push para GitHub (84c00d6..aae25bf)
+- [x] Deploy Vercel em progresso (~3 minutos)
+
+## v40 - Tradução Holandesa do Formulário
+- [x] Criar ficheiro de traduções com EN, NL e PT completos (investorFormTranslations.ts)
+- [x] Traduzir todas as 11 perguntas + ecrãs (welcome, contact, final) para NL
+- [x] Criar hook useLanguage para detectar idioma actual da página
+- [x] Refactor InvestorForm.tsx para usar traduções (títulos das perguntas, welcome, contact, final)
+- [x] Build testado (SUCESSO - 4.53s, 0 erros TypeScript)
+- [x] Testar formulário em localhost EN (FUNCIONA - títulos em inglês)
+- [x] Sistema de tradução implementado (useLanguage hook + translations file)
+- [ ] Criar checkpoint v40
 - [ ] Push para GitHub e deploy
+- [ ] Testar NL em produção após deploy

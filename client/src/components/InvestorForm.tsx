@@ -13,6 +13,8 @@ import {
 } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/lib/investorFormTranslations";
 
 interface InvestorFormProps {
   open: boolean;
@@ -68,6 +70,9 @@ interface FormData {
 const WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/E2AsebwrnRgA8Jk7bqVyIY";
 
 export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) {
+  const language = useLanguage();
+  const t = translations[language];
+  
   const [currentScreen, setCurrentScreen] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   
@@ -275,13 +280,13 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
         return (
           <div className="space-y-6 text-center">
             <div>
-              <h2 className="text-2xl font-bold mb-2">Portuguese Investment Intent Profile</h2>
+              <h2 className="text-2xl font-bold mb-2">{t.welcome.title}</h2>
               <p className="text-muted-foreground">
-                Ten short questions – five minutes – then instant access to off-market mid-high & high-end Portuguese deals.
+                {t.welcome.description}
               </p>
             </div>
             <Button onClick={handleNext} size="lg" className="w-full">
-              Start Intent Profile
+              {t.welcome.startButton}
             </Button>
           </div>
         );
@@ -290,7 +295,7 @@ export default function InvestorForm({ open, onOpenChange }: InvestorFormProps) 
         return (
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Q1. Which outcomes are you actively pursuing in Portugal?</h3>
+              <h3 className="text-lg font-semibold mb-2">{t.questions.q1.title}</h3>
               <p className="text-sm text-muted-foreground mb-4">(Choose any)</p>
             </div>
             <div className="space-y-3">
