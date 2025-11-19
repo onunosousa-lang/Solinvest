@@ -300,5 +300,14 @@
 - [ ] Tradução NL: Adiada para v40 (requer refactor completo do componente)
 - [x] Testar formulário em localhost (Q1 1-3 anos ✓, checkboxes visíveis ✓, navegação OK ✓)
 - [x] Build testado (SUCESSO - 5.47s, 0 erros TypeScript)
-- [ ] Criar checkpoint v39
+- [x] Criar checkpoint v39 (versão 84c00d6f)
+- [x] Push para GitHub (8fe4f47..84c00d6)
+- [ ] Aguardar deploy Vercel (~3 minutos)
+- [ ] Verificar formulário em produção
+
+## v39.1 - Aumentar Contraste Checkboxes (Bug Fix)
+- [x] BUG: Checkboxes quase invisíveis (border cinzento claro)
+- [x] Mudar border-input para border-slate-400 (light) e border-slate-500 (dark)
+- [x] Testar visibilidade em localhost (MUITO MELHOR - checkboxes claramente visíveis!)
+- [ ] Criar checkpoint v39.1
 - [ ] Push para GitHub e deploy
